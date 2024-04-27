@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* navbar disgn */
 .navbarUti {
     /* background-color: #051620; */
     @apply w-full h-20 text-white justify-center items-center flex;
@@ -16,4 +17,24 @@
 .navbarUti ul li button {
     background-color: #E4800B;
     @apply rounded-lg p-1 pr-4 pl-4;
+}
+
+/* accueil */
+
+.accueil {
+    @apply w-full p-10 justify-center items-center flex bg-sky-300;
+    height: 400px;
+}
+
+.container_accueil {
+    @apply w-10/12 justify-center items-center flex bg-red-500 m-auto flex-col;
+}
+.container_accueil h1 {
+    @apply font-bold text-2xl m-12;
+}
+.container_accueil .container {
+
+}
+.container_accueil .container .sub-container {
+    @apply w-96 bg-slate-600 p-3 h-72 mb-36 rounde;
 }
