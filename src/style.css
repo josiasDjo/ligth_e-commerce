@@ -4,9 +4,16 @@
 
 .navbarUti {
     /* background-color: #051620; */
-    @apply w-full h-20 text-white;
+    @apply w-full h-20 text-white justify-center items-center flex;
     background-color: #051620;
 }
 .navbarUti ul {
     @apply flex flex-row;
+}
+.navbarUti ul li {
+    @apply mr-8 font-semibold text-lg;
+}
+.navbarUti ul li button {
+    background-color: #E4800B;
+    @apply rounded-lg p-1 pr-4 pl-4;
 }
