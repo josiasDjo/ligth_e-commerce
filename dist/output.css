@@ -2406,6 +2406,20 @@ video {
   forced-color-adjust: none;
 }
 
+.navbarUti {
+  /* background-color: #051620; */
+  height: 5rem;
+  width: 100%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-color: #051620;
+}
+
+.navbarUti ul {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2477,4 +2491,3 @@ video {
     }
   }
 }
-
