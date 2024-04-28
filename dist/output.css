@@ -557,81 +557,44 @@ video {
 /* navbar disgn */
 
 .navbarUti {
-  display: flex;
-  height: 5rem;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  /* @apply w-full h-20 text-white justify-center items-center flex; */
   /* background-color: #051620; */
 }
 
 .navbarUti ul {
-  display: flex;
-  flex-direction: row;
+  /* @apply flex flex-row; */
 }
 
 .navbarUti ul li {
-  margin-right: 2rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
+  /* @apply mr-8 font-semibold text-lg; */
 }
 
 .navbarUti ul li button {
-  background-color: #E4800B;
-  border-radius: 0.5rem;
-  padding: 0.25rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  /* background-color: #E4800B; */
+  /* @apply rounded-lg p-1 pr-4 pl-4; */
 }
 
 /* accueil */
 
-.accueil {
-  margin-bottom: 2.5rem;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-  padding: 2.5rem;
-  height: 400px;
+/* .accueil {
+    @apply w-full p-10 justify-center items-center flex bg-gray-200 mb-10;
+    height: 400px;
 }
 
 .container_accueil {
-  margin: auto;
-  display: flex;
-  width: 83.333333%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    @apply w-10/12 justify-center items-center flex bg-gray-200 m-auto flex-col;
 }
-
 .container_accueil h1 {
-  margin: 3rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-}
+    @apply font-bold text-2xl m-12;
+} */
 
 /* .container_accueil .container {
 
 } */
 
-.container_accueil .container .sub-container {
-  margin-bottom: 9rem;
-  height: 18rem;
-  width: 24rem;
-  border-radius: 0.75rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-  padding: 0.75rem;
-}
+/* .container_accueil .container .sub-container {
+    @apply w-96 bg-gray-300 p-3 h-72 mb-36 rounded-xl;
+} */
 
 /* PAGE DE CONNEXION */
 

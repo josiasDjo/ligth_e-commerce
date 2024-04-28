@@ -4,23 +4,23 @@
 
 /* navbar disgn */
 .navbarUti {
-    @apply w-full h-20 text-white justify-center items-center flex;
+    /* @apply w-full h-20 text-white justify-center items-center flex; */
     /* background-color: #051620; */
 }
 .navbarUti ul {
-    @apply flex flex-row;
+    /* @apply flex flex-row; */
 }
 .navbarUti ul li {
-    @apply mr-8 font-semibold text-lg;
+    /* @apply mr-8 font-semibold text-lg; */
 }
 .navbarUti ul li button {
-    background-color: #E4800B;
-    @apply rounded-lg p-1 pr-4 pl-4;
+    /* background-color: #E4800B; */
+    /* @apply rounded-lg p-1 pr-4 pl-4; */
 }
 
 /* accueil */
 
-.accueil {
+/* .accueil {
     @apply w-full p-10 justify-center items-center flex bg-gray-200 mb-10;
     height: 400px;
 }
@@ -30,13 +30,13 @@
 }
 .container_accueil h1 {
     @apply font-bold text-2xl m-12;
-}
+} */
 /* .container_accueil .container {
 
 } */
-.container_accueil .container .sub-container {
+/* .container_accueil .container .sub-container {
     @apply w-96 bg-gray-300 p-3 h-72 mb-36 rounded-xl;
-}
+} */
 
 /* PAGE DE CONNEXION */
 

@@ -4,6 +4,6 @@
         <li><a href="">Explore</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>
-        <li><a href=""><button>Sign in</button></a></li>       
+        <li><a href="userCbd/connexion.php"><button>Sign in</button></a></li>       
     </ul>
 </div>
