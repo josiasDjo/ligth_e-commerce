@@ -18,13 +18,17 @@
         <div class="sub-conn">
             <div class="content">
                 <h2>Sign in</h2>
-                <form action="" method="post">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="">
-                    <input type="submit" value="VALIDATE">
-                </form>
+                <div class="form-align">
+                    <form action="" method="post">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="">
+                        <input type="submit" value="VALIDATE" class="btn-send">
+                    </form>
+                    <p>you don't have an account <a href="insciption.php">here</a></p>
+                </div>
+                <button><a href="#"></a></button>
             </div>
         </div>
     </div>

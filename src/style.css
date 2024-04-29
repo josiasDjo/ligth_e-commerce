@@ -4,23 +4,23 @@
 
 /* navbar disgn */
 .navbarUti {
-    /* @apply w-full h-20 text-white justify-center items-center flex; */
-    /* background-color: #051620; */
+    @apply w-full h-20 text-white justify-center items-center flex;
+    background-color: #051620;
 }
 .navbarUti ul {
-    /* @apply flex flex-row; */
+    @apply flex flex-row;
 }
 .navbarUti ul li {
-    /* @apply mr-8 font-semibold text-lg; */
+    @apply mr-8 font-semibold text-lg;
 }
 .navbarUti ul li button {
-    /* background-color: #E4800B; */
-    /* @apply rounded-lg p-1 pr-4 pl-4; */
+    @apply rounded-lg p-1 pr-4 pl-4;
+    background-color: #E4800B;
 }
 
 /* accueil */
 
-/* .accueil {
+.accueil {
     @apply w-full p-10 justify-center items-center flex bg-gray-200 mb-10;
     height: 400px;
 }
@@ -30,23 +30,58 @@
 }
 .container_accueil h1 {
     @apply font-bold text-2xl m-12;
-} */
+}
 /* .container_accueil .container {
 
 } */
-/* .container_accueil .container .sub-container {
+.container_accueil .container .sub-container {
     @apply w-96 bg-gray-300 p-3 h-72 mb-36 rounded-xl;
-} */
+}
 
 /* PAGE DE CONNEXION */
 
-/* .conn_container {
-    @apply w-full relative;
+.conn_container {
+    @apply w-full relative h-screen;
 }
 .conn_container .sub-photo {
-    @apply w-4/12;
+    @apply w-4/12 absolute left-0 h-screen;
 }
 .conn_container .sub-conn {
-    @apply w-8/12 relative;
+    @apply w-8/12 absolute right-0 h-screen justify-center items-end flex rounded-l-full pb-10;
     background-color: #051620;
-} */
+}
+.conn_container .sub-conn .content {
+    @apply bg-white w-6/12 h-5/6 absolute right-16 rounded-2xl p-10 justify-center items-center flex flex-col m-auto;
+}
+.conn_container .sub-conn .content h2 {
+    @apply text-2xl font-sans font-bold mb-3;
+    color: #051620;
+}
+.conn_container .sub-conn .content .form-align {
+    @apply justify-center items-center flex w-full p-4 flex-col;
+}
+.conn_container .sub-conn .content .form-align p {
+    @apply font-medium;
+    color: #051620;
+}
+.conn_container .sub-conn .content .form-align a {
+    color: #E4800B;
+}
+.conn_container .sub-conn .content form {
+    @apply flex flex-col w-full m-auto relative;
+}
+.conn_container .sub-conn .content form label {
+    @apply text-xs float-left;
+}
+.conn_container .sub-conn .content form input {
+    @apply border-2 border-solid w-full rounded-lg mb-4 p-1 h-8;
+}
+.conn_container .sub-conn .content form .btn-send {
+    @apply mt-6 font-bold;
+    background-color: #E4800B;
+    color: #051620;
+}
+.conn_container .sub-conn .content button {
+    @apply w-full h-7 absolute bottom-0 rounded-b-2xl;
+    background-color: #E4800B;
+}

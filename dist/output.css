@@ -557,54 +557,191 @@ video {
 /* navbar disgn */
 
 .navbarUti {
-  /* @apply w-full h-20 text-white justify-center items-center flex; */
-  /* background-color: #051620; */
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-color: #051620;
 }
 
 .navbarUti ul {
-  /* @apply flex flex-row; */
+  display: flex;
+  flex-direction: row;
 }
 
 .navbarUti ul li {
-  /* @apply mr-8 font-semibold text-lg; */
+  margin-right: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
 }
 
 .navbarUti ul li button {
-  /* background-color: #E4800B; */
-  /* @apply rounded-lg p-1 pr-4 pl-4; */
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: #E4800B;
 }
 
 /* accueil */
 
-/* .accueil {
-    @apply w-full p-10 justify-center items-center flex bg-gray-200 mb-10;
-    height: 400px;
+.accueil {
+  margin-bottom: 2.5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+  height: 400px;
 }
 
 .container_accueil {
-    @apply w-10/12 justify-center items-center flex bg-gray-200 m-auto flex-col;
+  margin: auto;
+  display: flex;
+  width: 83.333333%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
+
 .container_accueil h1 {
-    @apply font-bold text-2xl m-12;
-} */
+  margin: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
 
 /* .container_accueil .container {
 
 } */
 
-/* .container_accueil .container .sub-container {
-    @apply w-96 bg-gray-300 p-3 h-72 mb-36 rounded-xl;
-} */
+.container_accueil .container .sub-container {
+  margin-bottom: 9rem;
+  height: 18rem;
+  width: 24rem;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
 
 /* PAGE DE CONNEXION */
 
-/* .conn_container {
-    @apply w-full relative;
+.conn_container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
+
 .conn_container .sub-photo {
-    @apply w-4/12;
+  position: absolute;
+  left: 0px;
+  height: 100vh;
+  width: 33.333333%;
 }
+
 .conn_container .sub-conn {
-    @apply w-8/12 relative;
-    background-color: #051620;
-} */
+  position: absolute;
+  right: 0px;
+  display: flex;
+  height: 100vh;
+  width: 66.666667%;
+  align-items: flex-end;
+  justify-content: center;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  padding-bottom: 2.5rem;
+  background-color: #051620;
+}
+
+.conn_container .sub-conn .content {
+  position: absolute;
+  right: 4rem;
+  margin: auto;
+  display: flex;
+  height: 83.333333%;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+}
+
+.conn_container .sub-conn .content h2 {
+  margin-bottom: 0.75rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #051620;
+}
+
+.conn_container .sub-conn .content .form-align {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.conn_container .sub-conn .content .form-align p {
+  font-weight: 500;
+  color: #051620;
+}
+
+.conn_container .sub-conn .content .form-align a {
+  color: #E4800B;
+}
+
+.conn_container .sub-conn .content form {
+  position: relative;
+  margin: auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.conn_container .sub-conn .content form label {
+  float: left;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.conn_container .sub-conn .content form input {
+  margin-bottom: 1rem;
+  height: 2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.25rem;
+}
+
+.conn_container .sub-conn .content form .btn-send {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  background-color: #E4800B;
+  color: #051620;
+}
+
+.conn_container .sub-conn .content button {
+  position: absolute;
+  bottom: 0px;
+  height: 1.75rem;
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: #E4800B;
+}
