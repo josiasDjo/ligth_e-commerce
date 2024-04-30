@@ -2522,7 +2522,8 @@ video {
   justify-content: center;
   padding-bottom: 2.5rem;
   background-color: #051620;
-  border-top-left-radius: 25%;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
 }
 
 .conn_container .sub-conn .content {
