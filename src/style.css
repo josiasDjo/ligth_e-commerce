@@ -108,7 +108,11 @@
     @apply w-full relative h-screen; 
 }
 .container-addA .part-bg {
-    @apply w-4/12 absolute left-0 h-screen;
+    @apply w-4/12 absolute left-0 h-screen ;
+}
+.container-addA .part-bg img {
+    /* background-image: url(../src/images/warehouse.jpg); */
+    @apply w-full bg-cover bg-center bg-no-repeat;
 }
 .container-addArt .part-Add {
     @apply w-8/12 h-full absolute right-0 justify-center items-center flex;
@@ -137,6 +141,20 @@
     @apply border-2 border-solid border-sky-950 w-5/6 rounded-lg mb-3
     p-1 pl-4 pr-4;
 }
+.container-addArt .part-Add .ajouter form textarea {
+    @apply border-2 border-solid border-sky-950 w-5/6 rounded-lg mb-3 p-2;
+}
 .container-addArt .part-Add .ajouter form .shoose {
+    @apply border-2 border-solid;
     background-color: #E4800B;
+    border-color: #E4800B;
+}
+.container-addArt .part-Add .ajouter form .valide {
+    @apply border-2 border-solid;
+    background-color: #E4800B;
+    border-color: #E4800B;
+}
+.container-addArt .part-Add .ajouter form label {
+    @apply text-left font-bold;
+    color: #051620;
 }

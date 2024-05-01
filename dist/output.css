@@ -823,6 +823,14 @@ video {
   width: 33.333333%;
 }
 
+.container-addA .part-bg img {
+  /* background-image: url(../src/images/warehouse.jpg); */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .container-addArt .part-Add {
   position: absolute;
   right: 0px;
@@ -891,6 +899,33 @@ video {
   padding-right: 1rem;
 }
 
+.container-addArt .part-Add .ajouter form textarea {
+  margin-bottom: 0.75rem;
+  width: 83.333333%;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(8 47 73 / var(--tw-border-opacity));
+  padding: 0.5rem;
+}
+
 .container-addArt .part-Add .ajouter form .shoose {
+  border-width: 2px;
+  border-style: solid;
   background-color: #E4800B;
+  border-color: #E4800B;
+}
+
+.container-addArt .part-Add .ajouter form .valide {
+  border-width: 2px;
+  border-style: solid;
+  background-color: #E4800B;
+  border-color: #E4800B;
+}
+
+.container-addArt .part-Add .ajouter form label {
+  text-align: left;
+  font-weight: 700;
+  color: #051620;
 }

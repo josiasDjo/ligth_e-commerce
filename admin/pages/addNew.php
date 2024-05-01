@@ -12,6 +12,7 @@
     <div class="container-addArt">
         <div class="part-bg">
             <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+            <!-- <img src="../../src/images/warehouse.jpg" alt=""> -->
         </div>
         <div class="part-Add">
             <div class="rendu">
@@ -25,16 +26,19 @@
             </div>
 
             <div class="ajouter">
-                <form action="" method="post">
-                    <input type="file" name="image" class="shoose">
-                    <label for="nom">Name</label>
-                    <input type="text" name="nom" id="">
-                    <label for="prix">Price</label>
-                    <input type="number" name="prix" id="">
-                    <label for="description">Description</label>
-                    <input type="text" name="description" id="">
-                    <input type="submit" value="VALIDATE">
-                </form>
+                <div class="">
+                    <form action="" method="post">
+                        <input type="file" name="image" class="shoose">
+                        <label for="nom">Name</label>
+                        <input type="text" name="nom" id="">
+                        <label for="prix">Price</label>
+                        <input type="number" name="prix" id="">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="" cols="30" rows="4"></textarea>
+                        <!-- <input type="text" name="description" id="" > -->
+                        <input type="submit" value="VALIDATE" class="valide">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
