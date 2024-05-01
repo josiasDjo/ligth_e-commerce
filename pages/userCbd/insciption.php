@@ -32,7 +32,7 @@
                     </form>
                     <p>Already have an account <a href="connexion.php">here</a></p>
                 </div>
-                <button><a href="#"></a></button>
+                <button><a href="../../admin/pages/connexionAdmin.php"></a></button>
             </div>
         </div>
     </div>

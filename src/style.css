@@ -44,13 +44,13 @@
     @apply w-full relative h-screen;
 }
 .conn_container .sub-photo {
-    @apply w-4/12 absolute left-0 h-screen;
+    @apply w-5/12 absolute left-0 h-screen;
 }
 .conn_container .sub-conn {
-    @apply w-8/12 absolute right-0 h-screen justify-center items-end flex pb-10;
+    @apply w-7/12 absolute right-0 h-screen justify-center items-center flex;
     background-color: #051620;
-    border-top-left-radius: 20%;  
-    border-bottom-left-radius: 20%;  
+    border-top-left-radius: 35%;  
+    border-bottom-left-radius: 50%; 
 }
 .conn_container .sub-conn .content {
     @apply bg-white w-6/12 h-5/6 absolute right-16 rounded-2xl p-10 justify-center items-center flex flex-col m-auto;

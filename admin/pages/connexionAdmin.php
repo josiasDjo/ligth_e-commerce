@@ -22,13 +22,15 @@
                     <form action="" method="post">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="">
+                        <label for="phone">Tel</label>
+                        <input type="tel" name="phone" id="">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="">
                         <input type="submit" value="VALIDATE" class="btn-send">
                     </form>
                     <p>you don't have an account <a href="insciption.php">here</a></p>
                 </div>
-                <button><a href="../../admin/pages/connexionAdmin.php"></a></button>
+                <button><a href="#"></a></button>
             </div>
         </div>
     </div>
