@@ -12,16 +12,27 @@
     <div class="container-set">
         <div class="sub-part1">
             <ul>
-                <li>Add Admin</li>
-                <li>Delete Articles</li>
-                <li>Language</li>
-                <li>Password and Security</li>
-                <li>Privacy Check</li>
+                <?php $childPage = ""; ?>
+                <li><button  onclick="<?php $childPage = 1; ?>"> Add Admin</button></li>
+                <li onclick="<?php $childPage = 2;  ?>">Delete Articles</li>
+                <li onclick="<?php $childPage = 3;  ?>">Language</li>
+                <li onclick="<?php $childPage = 4;  ?>">Password and Security</li>
+                <li onclick="<?php $childPage = 5;  ?>">Privacy Check</li>
             </ul>
         </div>
 
         <div class="sub-part2">
-
+            <?php
+                if ($childPage == 1) {
+                    require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'settings' . DIRECTORY_SEPARATOR . 'addAdmin.php';
+                }
+                else if ($childPage == 2) {
+                    require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'settings' . DIRECTORY_SEPARATOR . 'deleteArticles.php';
+                }
+                else {
+                    //
+                }
+            ?>
         </div>
     </div>
 </body>
