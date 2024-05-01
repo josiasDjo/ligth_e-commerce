@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php  require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'navbarUti.php';  ?>
+    <?php  require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarAd.php';  ?>
 
     <div class="conn_container">
         <div class="sub-photo">
@@ -28,9 +28,8 @@
                         <input type="password" name="password" id="">
                         <input type="submit" value="VALIDATE" class="btn-send">
                     </form>
-                    <p>you don't have an account <a href="insciption.php">here</a></p>
                 </div>
-                <button><a href="#"></a></button>
+                <button><a href="connexionAdmin.php"></a></button>
             </div>
         </div>
     </div>

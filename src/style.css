@@ -84,6 +84,59 @@
     color: #051620;
 }
 .conn_container .sub-conn .content button {
-    @apply w-full h-7 absolute bottom-0 rounded-b-2xl;
+    @apply w-full h-7 absolute bottom-0 left-0 rounded-b-2xl;
+    background-color: #E4800B;
+}
+
+/* message disign */
+
+.container-msg {
+    @apply w-full relative;
+}
+.container-msg .part-contact {
+    @apply w-4/12 left-0 absolute h-screen text-white p-2 pl-9;
+    background-color: #051620;
+    opacity: 90%;
+}
+.container-msg .part-convers {
+    @apply w-8/12 bg-slate-400 right-0 absolute;
+}
+
+/* new articles disign */
+
+.container-addArt {
+    @apply w-full relative h-screen; 
+}
+.container-addA .part-bg {
+    @apply w-4/12 absolute left-0 h-screen;
+}
+.container-addArt .part-Add {
+    @apply w-8/12 h-full absolute right-0 justify-center items-center flex;
+}
+.container-addArt .part-Add .rendu {
+    @apply w-2/5 h-96 absolute left-0 rounded-lg;
+}
+.container-addArt .part-Add .rendu .container-add {
+    @apply w-full h-80 rounded-lg p-3 flex flex-col;
+    background-color: #051620;
+}
+.container-addArt .part-Add .rendu .container-add .sub-image {
+    @apply w-full h-4/5 bg-slate-400;
+}
+.container-addArt .part-Add .rendu .container-add h5 {
+    @apply font-bold;
+    color: #E4800B;
+}
+.container-addArt .part-Add .ajouter {
+    @apply w-2/5 h-96 absolute right-0;
+}
+.container-addArt .part-Add .ajouter form {
+    @apply flex flex-col justify-center items-center h-96;
+}
+.container-addArt .part-Add .ajouter form input {
+    @apply border-2 border-solid border-sky-950 w-5/6 rounded-lg mb-3
+    p-1 pl-4 pr-4;
+}
+.container-addArt .part-Add .ajouter form .shoose {
     background-color: #E4800B;
 }
