@@ -882,8 +882,6 @@ video {
   display: flex;
   height: 24rem;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .container-addArt .part-Add .ajouter form input {
@@ -892,11 +890,10 @@ video {
   border-radius: 0.5rem;
   border-width: 2px;
   border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(8 47 73 / var(--tw-border-opacity));
   padding: 0.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  border-color: #E4800B;
 }
 
 .container-addArt .part-Add .ajouter form textarea {
@@ -905,9 +902,8 @@ video {
   border-radius: 0.5rem;
   border-width: 2px;
   border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(8 47 73 / var(--tw-border-opacity));
   padding: 0.5rem;
+  border-color: #E4800B;
 }
 
 .container-addArt .part-Add .ajouter form .shoose {
@@ -925,7 +921,52 @@ video {
 }
 
 .container-addArt .part-Add .ajouter form label {
+  left: 0px;
+  align-items: flex-start;
   text-align: left;
   font-weight: 700;
   color: #051620;
+}
+
+/* settings */
+
+.container-set {
+  height: 100vh;
+  width: 100%;
+}
+
+.container-set .sub-part1 {
+  position: absolute;
+  left: 0px;
+  margin: auto;
+  height: 100%;
+  width: 33.333333%;
+  align-items: center;
+  justify-content: center;
+  border-right-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-right-color: rgb(71 85 105 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.9;
+  background-color: #051620;
+}
+
+.container-set .sub-part1 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-set .sub-part1 ul li {
+  margin: 1.25rem;
+}
+
+.container-set .sub-part2 {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 66.666667%;
+  opacity: 0.9;
+  background-color: #051620;
 }

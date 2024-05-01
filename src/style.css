@@ -135,14 +135,16 @@
     @apply w-2/5 h-96 absolute right-0;
 }
 .container-addArt .part-Add .ajouter form {
-    @apply flex flex-col justify-center items-center h-96;
+    @apply flex flex-col h-96;
 }
 .container-addArt .part-Add .ajouter form input {
-    @apply border-2 border-solid border-sky-950 w-5/6 rounded-lg mb-3
+    @apply border-2 border-solid w-5/6 rounded-lg mb-3
     p-1 pl-4 pr-4;
+    border-color: #E4800B;
 }
 .container-addArt .part-Add .ajouter form textarea {
-    @apply border-2 border-solid border-sky-950 w-5/6 rounded-lg mb-3 p-2;
+    @apply border-2 border-solid w-5/6 rounded-lg mb-3 p-2;
+    border-color: #E4800B;
 }
 .container-addArt .part-Add .ajouter form .shoose {
     @apply border-2 border-solid;
@@ -155,6 +157,26 @@
     border-color: #E4800B;
 }
 .container-addArt .part-Add .ajouter form label {
-    @apply text-left font-bold;
+    @apply text-left font-bold items-start left-0;
     color: #051620;
+}
+
+/* settings */
+.container-set {
+    @apply w-full h-screen;
+}
+.container-set .sub-part1 {
+    @apply w-4/12 h-full opacity-90 border-r-2 border-solid border-r-slate-600 absolute left-0
+    text-white justify-center items-center m-auto;
+    background-color: #051620
+}
+.container-set .sub-part1 ul {
+    @apply flex flex-col;
+}
+.container-set .sub-part1 ul li {
+    @apply m-5;
+}
+.container-set .sub-part2 {
+    @apply w-8/12 opacity-90 h-full absolute right-0;
+    background-color: #051620;
 }
