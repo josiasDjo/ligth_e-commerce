@@ -8,7 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php  require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'navbarUti.php';  ?>
+    <?php 
+        require_once dirname(__DIR__) . DIRECTORY_SEPARATOR ;
+        require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'navbarUti.php';        
+    ?>
 
     <div class="conn_container">
         <div class="sub-photo">
@@ -28,7 +31,7 @@
                         <input type="email" name="email" id="">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="">
-                        <input type="submit" value="VALIDATE" class="btn-send">
+                        <input type="submit" value="VALIDATE" name="inscris_check" class="btn-send">
                     </form>
                     <p>Already have an account <a href="connexion.php">here</a></p>
                 </div>

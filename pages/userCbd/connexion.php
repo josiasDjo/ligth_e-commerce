@@ -24,7 +24,7 @@
                         <input type="email" name="email" id="">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="">
-                        <input type="submit" value="VALIDATE" class="btn-send">
+                        <input type="submit" value="VALIDATE" name="checkconn" class="btn-send">
                     </form>
                     <p>you don't have an account <a href="insciption.php">here</a></p>
                 </div>
