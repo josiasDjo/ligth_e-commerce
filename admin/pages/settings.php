@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarAd.php'; ?>
+    <?php 
+        require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarAd.php'; 
+        require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'admincheck.php';
+    ?>
 
     <div class="container-set">
         <div class="sub-part1">
@@ -23,15 +26,15 @@
 
         <div class="sub-part2">
             <?php
-                if ($childPage == 1) {
+                // if ($childPage == 1) {
                     require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'settings' . DIRECTORY_SEPARATOR . 'addAdmin.php';
-                }
-                else if ($childPage == 2) {
-                    require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'settings' . DIRECTORY_SEPARATOR . 'deleteArticles.php';
-                }
-                else {
-                    //
-                }
+                // }
+                // else if ($childPage == 2) {
+                //     require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'settings' . DIRECTORY_SEPARATOR . 'deleteArticles.php';
+                // }
+                // else {
+                    
+                // }
             ?>
         </div>
     </div>

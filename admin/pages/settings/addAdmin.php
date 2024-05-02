@@ -1,5 +1,5 @@
 <div class="content">
-    <h2>Sign in</h2>
+    <h2>Add new Admin</h2>
     <div class="form-align">
         <form action="" method="post">
             <label for="name">Name</label>
@@ -12,8 +12,8 @@
             <input type="tel" name="phone" id="">
             <label for="password">Password</label>
             <input type="password" name="password" id="">
-            <input type="submit" value="VALIDATE" class="btn-send">
+            <input type="submit" value="VALIDATE" name="addAdmin" class="btn-send">
         </form>
     </div>
-    <button><a href="connexionAdmin.php"></a></button>
+    <button><a href="#"></a></button>
 </div>

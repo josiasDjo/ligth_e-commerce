@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php 
-        require_once dirname(__DIR__) . DIRECTORY_SEPARATOR ;
+        require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'signcheck.php'; 
         require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'navbarUti.php';        
     ?>
 
@@ -35,6 +35,7 @@
                     </form>
                     <p>Already have an account <a href="connexion.php">here</a></p>
                 </div>
+                <p> <?php echo $error ?> </p>
                 <a href="../../admin/pages/connexionAdmin.php"><button></button></a>
             </div>
         </div>

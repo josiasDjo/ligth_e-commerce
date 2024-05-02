@@ -29,6 +29,7 @@
                     header ("location : index.php");
                 } else {
                     $error = 'Mot de passe incorrect<br/>';
+                    echo $error;
                 }
             }
 
@@ -56,7 +57,11 @@
             }
 
             if ($total == 0) {
-                $sql = $bdd -> prepare("INSERT INTO tuser (nom, prenom, email, password) VALUES ($name, $firstname, $email, $password)");
+                $sql = $bdd -> prepare("INSERT INTO tuser (nom, prenom, email, password) VALUES (:name, :firstname, :email, :password)");
+                $sql -> bindParam(':name', $name);
+                $sql -> bindParam(':firstname', $firstname);
+                $sql -> bindParam(':email', $email);
+                $sql -> bindParam(':password', $password);
                 $sql -> execute();
 
                 echo "Inscription terminée";
@@ -65,4 +70,6 @@
             }
         }
     }
+
+
 ?>
