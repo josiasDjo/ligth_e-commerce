@@ -27,7 +27,7 @@
         <div class="sub-part2">
             <?php
                 // if ($childPage == 1) {
-                    require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'settings' . DIRECTORY_SEPARATOR . 'addAdmin.php';
+                require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'settings' . DIRECTORY_SEPARATOR . 'addAdmin.php';
                 // }
                 // else if ($childPage == 2) {
                 //     require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'settings' . DIRECTORY_SEPARATOR . 'deleteArticles.php';

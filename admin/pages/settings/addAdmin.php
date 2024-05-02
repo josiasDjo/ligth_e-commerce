@@ -12,7 +12,7 @@
             <input type="tel" name="phone" id="">
             <label for="password">Password</label>
             <input type="password" name="password" id="">
-            <input type="submit" value="VALIDATE" name="addAdmin" class="btn-send">
+            <input type="submit" value="VALIDATE" name="addAdminS" class="btn-send">
         </form>
     </div>
     <button><a href="#"></a></button>

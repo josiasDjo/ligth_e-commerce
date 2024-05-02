@@ -25,7 +25,7 @@
                 $error = 'Valeur de connexion incorrectes <br/>';
             } else {
                 if ( password_verify($password_bd, $password)) {
-                    $_SESSION['user'] = $res;
+                    $_SESSION['user'] = $res['idUSer'];
                     header ("location : index.php");
                 } else {
                     $error = 'Mot de passe incorrect<br/>';

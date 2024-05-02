@@ -1,12 +1,51 @@
 <?php require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'condb.php'; ?>
 <?php session_start(); ?>
 <?php 
-    if (isset($_POST['addAdmin'])) {
-        if (empty($_POST['name']) || empty($_POST['firstname']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
+
+//  ---------- check connexion -------------------
+
+    $error = "";
+    if (isset($_POST['checkSignIn'])) {
+        if (empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
+            $error = 'Tout les champs sont requis ! ';
+        } else {
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
+            $password = $_POST['password'];
+
+            $sql = $bdd -> prepare("SELECT * FROM tadmin WHERE email =?");
+            $sql -> execute(array($email));
+
+            $total = $sql -> rowCount();
+            $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
+
+            foreach ($resultat as $res) {
+                $email_bd = $res['email'];
+            }
+
+            if ($total == 0 ) {
+                $error = "Valeurs de connexion incorrectes !! ";
+            } else {
+                foreach ($resultat as $res) {
+                    $password_bd = $red['password'];
+                }
+
+                if (password_verify($password_bd, $password)) {
+                    $_SESSION['user'] = $res['idAdmin'];
+                    header("location : ../../../pages/messages.php");
+                }
+            }
+        }
+    }
+
+// ----------- check inscription ----------------- 
+
+    if (isset($_POST['addAdminS'])) {
+        if (empty($_POST['name']) || empty($_POST['lastname']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
             $error = 'Tout les champs sont requis ! ';
         } else {
             $name = $_POST['name'];
-            $firstname = $_POST['firstname'];
+            $firstname = $_POST['lastname'];
             $email = $_POST['email'];
             $phone = $_POST['phone'];
             $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
@@ -32,7 +71,9 @@
     
                 $sql -> execute();
     
-                echo "inscription terminée";
+                // echo "inscription terminée";
+                // header("location : ../../pages/messages.php");
+
             } else {
                 $error = "Un compte est déjà associé à cette email !! ";
                 echo $error;

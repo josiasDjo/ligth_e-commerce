@@ -26,7 +26,7 @@
                         <input type="tel" name="phone" id="">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="">
-                        <input type="submit" value="VALIDATE" class="btn-send">
+                        <input type="submit" value="VALIDATE" name="checkSignIn" class="btn-send">
                     </form>
                 </div>
                 <button><a href="connexionAdmin.php"></a></button>
