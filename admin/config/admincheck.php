@@ -31,8 +31,18 @@
                 }
 
                 if (password_verify($password_bd, $password)) {
+
+                    foreach ($resultat as $res) {
+                        $phone_bd = $res['phone'];
+                    }
+                    
+                    if ($phone_bd === $phone) {
                     $_SESSION['user'] = $res['idAdmin'];
-                    header("location : ../../../pages/messages.php");
+                    header("location : ../pages/messages.php");
+                    exit();
+                    }
+                } else {
+                    $error = "Mot de passe incorrect ! ";
                 }
             }
         }

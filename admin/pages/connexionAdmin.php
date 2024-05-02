@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php  require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarAd.php';  ?>
+    <?php  require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarUti.php'  ?>
 
     <div class="conn_container">
         <div class="sub-photo">
