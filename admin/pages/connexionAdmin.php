@@ -8,7 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php  require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarUti.php'  ?>
+    <?php  
+        require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarUti.php'; 
+        require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'admincheck.php';
+    ?>
 
     <div class="conn_container">
         <div class="sub-photo">
@@ -29,6 +32,7 @@
                         <input type="submit" value="VALIDATE" name="checkSignIn" class="btn-send">
                     </form>
                 </div>
+                <p> <?php echo $error;  ?> </p>
                 <button><a href="connexionAdmin.php"></a></button>
             </div>
         </div>
