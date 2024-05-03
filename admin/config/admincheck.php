@@ -34,7 +34,8 @@
                 if ($phone_bd == $phone) {   
                     if (password_verify($password, $password_bd)) {
                         $_SESSION['admin'] = $res;
-                        header("location : ../../../pages/messages.php");
+                        header ("location : ../../../pages/messages.php");
+                        echo "messages accept ! ";
                         exit();
                     } else {
                         $error = "Numéro incorrect ! ";
@@ -45,7 +46,7 @@
             }
         }
     } else {
-        $error = "Erreur inconnue !! ";
+        // $error = "Erreur inconnue !! ";
     }
 ?>
 
@@ -92,6 +93,6 @@
             }   
         }
     } else {
-        $error = "Erreur iconnue !! ";
+        // $error = "Erreur iconnue !! ";
     }
 ?>
