@@ -4,8 +4,8 @@
 ?>
 
 <?php
+    $error = "";
     if (isset($_POST['checkconn'])) {
-        $error = "";
         if (empty($_POST['email']) || empty($_POST['password'])) {
             $error .= 'Email & password';
         } else {
@@ -24,7 +24,7 @@
             if ($total == 0 ) {
                 $error = 'Valeur de connexion incorrectes <br/>';
             } else {
-                if ( password_verify($password_bd, $password)) {
+                if ( password_verify($password, $password_bd)) {
                     $_SESSION['user'] = $res['idUSer'];
                     header ("location : index.php");
                 } else {

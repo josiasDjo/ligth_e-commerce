@@ -28,18 +28,14 @@
             } else {
                 foreach ($resultat as $res) {
                     $password_bd = $res['password'];
+                    $phone_bd = $res['phone'];
                 }
 
-                if (password_verify($password_bd, $password)) {
-
-                    foreach ($resultat as $res) {
-                        $phone_bd = $res['phone'];
-                    }
-                    
-                    if ($phone_bd == $phone) {
-                    $_SESSION['user'] = $res['idAdmin'];
-                    header("location : ../pages/messages.php");
-                    exit();
+                if ($phone_bd == $phone) {   
+                    if (password_verify($password, $password_bd)) {
+                        $_SESSION['admin'] = $res;
+                        header("location : ../../../pages/messages.php");
+                        exit();
                     } else {
                         $error = "Numéro incorrect ! ";
                     }
@@ -49,7 +45,7 @@
             }
         }
     } else {
-        echo "test";
+        $error = "Erreur inconnue !! ";
     }
 ?>
 
@@ -57,46 +53,45 @@
 // ----------- check inscription ----------------- 
 
 
-    // if (isset($_POST['addAdminS'])) {
-    //     if (empty($_POST['name']) || empty($_POST['lastname']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
-    //         $error = 'Tout les champs sont requis ! ';
-    //     } else {
-    //         $name = $_POST['name'];
-    //         $firstname = $_POST['lastname'];
-    //         $email = $_POST['email'];
-    //         $phone = $_POST['phone'];
-    //         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    if (isset($_POST['addAdminS'])) {
+        if (empty($_POST['name']) || empty($_POST['lastname']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
+            $error = 'Tout les champs sont requis ! ';
+        } else {
+            $name = $_POST['name'];
+            $firstname = $_POST['lastname'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
+            $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    //         $sql = $bdd -> prepare("SELECT * FROM tadmin WHERE email =?");
-    //         $sql -> execute(array($email));
+            $sql = $bdd -> prepare("SELECT * FROM tadmin WHERE email =?");
+            $sql -> execute(array($email));
 
-    //         $total = $sql -> rowCount();
-    //         $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
+            $total = $sql -> rowCount();
+            $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
 
-    //         foreach ($resultat as $res) {
-    //             $email_bd = $res['email'];
-    //         }
+            foreach ($resultat as $res) {
+                $email_bd = $res['email'];
+            }
 
-    //         if ($total == 0 ) {
-    //             $sql = $bdd -> prepare("INSERT INTO tadmin (nom, prenom, phone, email, password) VALUES (:nom, :prenom, :phone, :email, :password)");
+            if ($total == 0 ) {
+                $sql = $bdd -> prepare("INSERT INTO tadmin (nom, prenom, phone, email, password) VALUES (:nom, :prenom, :phone, :email, :password)");
             
-    //             $sql -> bindParam('nom', $name);
-    //             $sql -> bindParam('prenom', $firstname);
-    //             $sql -> bindParam('phone', $phone);
-    //             $sql -> bindParam('email', $email);
-    //             $sql -> bindParam('password', $password);
+                $sql -> bindParam('nom', $name);
+                $sql -> bindParam('prenom', $firstname);
+                $sql -> bindParam('phone', $phone);
+                $sql -> bindParam('email', $email);
+                $sql -> bindParam('password', $password);
     
-    //             $sql -> execute();
+                $sql -> execute();
     
-    //             // echo "inscription terminée";
-    //             // header("location : ../../pages/messages.php");
+                // echo "inscription terminée";
+                // header("location : ../../pages/messages.php");
 
-    //         } else {
-    //             $error = "Un compte est déjà associé à cette email !! ";
-    //             echo $error;
-    //         }   
-    //     }
-    // } else {
-    //     echo "erreur inconnue !! ";
-    // }
+            } else {
+                $error = "Un compte est déjà associé à cette email !! ";
+            }   
+        }
+    } else {
+        $error = "Erreur iconnue !! ";
+    }
 ?>

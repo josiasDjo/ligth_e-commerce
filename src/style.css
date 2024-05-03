@@ -14,7 +14,7 @@
     @apply mr-8 font-semibold text-lg;
 }
 .navbarUti ul li button {
-    @apply rounded-lg p-1 pr-4 pl-4;
+    @apply rounded-lg p-1 pr-4 pl-4 absolute right-5;
     background-color: #E4800B;
 }
 
@@ -55,6 +55,9 @@
 }
 .conn_container .sub-conn .content {
     @apply bg-white w-6/12 h-5/6 absolute right-16 rounded-2xl p-10 justify-center items-center flex flex-col m-auto;
+}
+.conn_container .sub-conn .content p {
+    @apply text-red-400 font-semibold;
 }
 .conn_container .sub-conn .content h2 {
     @apply text-2xl font-sans font-bold mb-3;
