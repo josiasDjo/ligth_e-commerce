@@ -30,8 +30,8 @@
 
             <div class="ajouter">
                 <div class="">
-                    <form action="" method="post">
-                        <input type="file" name="image" class="shoose">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <input type="file" name="photo" class="shoose">
                         <label for="nom">Name</label>
                         <input type="text" name="nom" id="">
                         <label for="prix">Price</label>

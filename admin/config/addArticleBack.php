@@ -10,8 +10,8 @@
         } else {
             $nom_items = $_POST['nom'];
             $prix_items = $_POST['prix'];
-            $image_items = $_FILES['image']['name'];
-            $image_items_tmp = $_FILES['image']['tmp_name'];
+            $image_items = $_FILES['photo']['name'];
+            $image_items_tmp = $_FILES['photo']['tmp_name'];
             $category_items = $_POST['category'];
 
             if ($image_items != "") {
