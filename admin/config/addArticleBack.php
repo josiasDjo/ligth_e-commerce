@@ -10,8 +10,8 @@
         } else {
             $nom_items = $_POST['nom'];
             $prix_items = $_POST['prix'];
-            $image_items = $_FILES['image'] ['name'];
-            $image_items_tmp = $_FILES['image'] ['tmp_name'];
+            $image_items = $_FILES['image']['name'];
+            $image_items_tmp = $_FILES['image']['tmp_name'];
             $category_items = $_POST['category'];
 
             if ($image_items != "") {
@@ -24,13 +24,16 @@
                     $image_name = $nom_items . rand() . $ext;
                     move_uploaded_file($image_items_tmp, '../../src/images/articles' . $image_name);
 
-                    
+
                     $sql = $bdd -> prepare("INSERT INTO tproduit (:nom, :prix, :description, :image)");
                     $sql -> bindParam(':nom', $nom_items);
                     $sql -> bindParam(':prix', $prix_items);
                     $sql -> bindParam(':description', $description_items);
-                    $sql -> bindParam(':image', $image_items);
+                    $sql -> bindParam(':image', $image_names);
+
                     $sql -> execute();
+
+                    echo "Ajout terminé !! ";
 
                 }
             } else {
