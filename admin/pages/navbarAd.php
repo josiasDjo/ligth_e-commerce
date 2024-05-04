@@ -1,7 +1,7 @@
 <?php 
     require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'admincheck.php';
     
-    $sql = $bb -> prepare("SELECT * FROM tadmin");
+    $sql = $bdd -> prepare("SELECT * FROM tadmin");
     $sql -> execute();
     $total = $sql -> rowCount();
     $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
@@ -19,6 +19,6 @@
         <li><a href="messages.php">Messages</a></li>
         <li><a href="addNew.php">Add new Articles</a></li>
         <li><a href="settings.php">Settings</a></li>
-        <li><a href=""><button> <?php  ?> </button></a></li>       
+        <li><a href=""><button> <?php $prenom_bd ?> </button></a></li>       
     </ul>
 </div>
