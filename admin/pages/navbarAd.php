@@ -1,15 +1,19 @@
 <?php 
     require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'admincheck.php';
     
-    $sql = $bdd -> prepare("SELECT * FROM tadmin");
-    $sql -> execute();
+    $sql = $bdd -> prepare("SELECT * FROM tadmin WHERE email=?");
+    $sql -> execute(array($email));
     $total = $sql -> rowCount();
     $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
+
+    // $prenom_bd ="";
 
     foreach ($resultat as $res) {
         $nom_bd = $res['nom'];
         $prenom_bd = $res['prenom'];
     }
+    echo $prenom_bd;
+
 ?>
 
 <div class="navbarUti">
@@ -19,6 +23,6 @@
         <li><a href="messages.php">Messages</a></li>
         <li><a href="addNew.php">Add new Articles</a></li>
         <li><a href="settings.php">Settings</a></li>
-        <li><a href=""><button> <?php $prenom_bd ?> </button></a></li>       
+        <li><a href=""><button> <?php echo $prenom_bd; ?> </button></a></li>       
     </ul>
 </div>

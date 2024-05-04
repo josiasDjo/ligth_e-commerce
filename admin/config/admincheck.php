@@ -6,6 +6,7 @@
 
 //  ---------- check connexion -------------------
     $error = "";
+    $email = "";
     if (isset($_POST['checkSignIn'])) {
         if (empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
             $error = 'Tout les champs sont requis ! ';
