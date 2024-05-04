@@ -868,6 +868,7 @@ video {
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+  padding: 1.25rem;
 }
 
 .container-addArt .part-Add .rendu .container-add h5 {

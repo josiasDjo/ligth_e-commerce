@@ -133,7 +133,7 @@
     background-color: #051620;
 }
 .container-addArt .part-Add .rendu .container-add .sub-image {
-    @apply w-full h-4/5 bg-slate-400;
+    @apply w-full h-4/5 bg-slate-400 p-5;
 }
 .container-addArt .part-Add .rendu .container-add h5 {
     @apply font-bold;

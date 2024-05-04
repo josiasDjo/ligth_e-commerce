@@ -21,10 +21,10 @@
             <div class="rendu">
                 <div class="container-add">
                     <div class="sub-image">
-                        <img src="<?php echo ""; ?>" alt="">
+                        <img src="../../src/images/articles/<?php echo $image_name ?>" alt="">
                     </div>
                     <h5> <?php echo $nom_items; ?> </h5>
-                    <label><?php echo $prix_items; ?> fsf</label>
+                    <label><?php echo $prix_items; ?> </label>
                     <p> <?php echo $description_items; ?> </p>
                 </div>
             </div>

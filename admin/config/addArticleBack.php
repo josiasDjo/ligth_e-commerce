@@ -5,6 +5,11 @@
 <?php
     $error = "";
     global $nom_items;
+    global $prix_items;
+    global $category_items;
+    global $description_items;
+    global $image_name;
+
     if (isset($_POST['envoisArticle'])) {
         if (empty($_POST['nom']) || empty($_POST['prix'])) {
             $error = "Tout les champs sont requis ! ";
@@ -26,7 +31,7 @@
                     if ($ext != "jpg" && $ext != "jpeg" && $ext != "png" && $ext != "gif") {
                         $error = "Extension non permi * ('.jpeg, .png, .jpg, .gif')";
                     } else {
-                        $image_name = $nom_items . rand() .'.'.$ext;
+                        $image_name = $nom_items . '-' . rand() .'.'.$ext;
                         move_uploaded_file($image_items_tmp, '../../src/images/articles/' . $image_name);
 
                         $dateto_to_day = date("Y-M-D H:i:s");
@@ -53,6 +58,4 @@
         }
 
     }
-
-    echo $nom_items;
 ?>
