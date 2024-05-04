@@ -1,27 +1,6 @@
 <?php 
     require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'admincheck.php';
     
-    if (isset($_POST['checkSignIn'])) {
-        $email = $_POST['email'];
-
-        $sql = $bdd -> prepare("SELECT * FROM tadmin WHERE email=?");
-        $sql -> execute(array($email));
-        $total = $sql -> rowCount();
-        $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
-
-        // $prenom_bd ="";
-        if ($total != 0) { 
-            foreach ($resultat as $res) {
-                $nom_bd = $res['nom'];
-                $prenom_bd = $res['prenom'];
-
-                echo 'Le nom est : ' . $prenom_bd;
-            }
-        } else {
-            echo "Aucun résultat trouvé !";
-        }
-        echo 'dfjksf' . $email;
-    }
 ?>
 
 <div class="navbarUti">
