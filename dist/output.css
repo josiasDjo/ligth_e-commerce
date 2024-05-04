@@ -900,6 +900,30 @@ video {
   border-color: #E4800B;
 }
 
+.container-addArt .part-Add .ajouter form select {
+  margin-bottom: 0.75rem;
+  width: 83.333333%;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-color: #E4800B;
+}
+
+.container-addArt .part-Add .ajouter form select option {
+  margin-bottom: 0.75rem;
+  width: 83.333333%;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-color: #E4800B;
+}
+
 .container-addArt .part-Add .ajouter form textarea {
   margin-bottom: 0.75rem;
   width: 83.333333%;

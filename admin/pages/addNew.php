@@ -33,6 +33,13 @@
                         <input type="text" name="nom" id="">
                         <label for="prix">Price</label>
                         <input type="number" name="prix" id="">
+                        <select name="" id="">
+                            <option value="vide"></option>
+                            <option value="appleWatch">Apple Watch</option>
+                            <option value="phone">Phone</option>
+                            <option value="airPod">Air pod</option>
+                            <option value="laptop">Laptop</option>
+                        </select>
                         <label for="description">Description</label>
                         <textarea name="description" id="" cols="30" rows="4"></textarea>
                         <!-- <input type="text" name="description" id="" > -->
