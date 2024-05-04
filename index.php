@@ -21,7 +21,65 @@
     <div class="container_accueil">
         <h1>OUR PRODUCTS</h1>
         <div class="container">
-            <?php require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce'. DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'showdataHome.php';?>
+            <?php 
+                // require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce'. DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'showdataHome.php';
+            ?>
+            <div class="sub-container">
+                <div class="image-show">
+                    <img src="src/images/articles/chromeBook 14-152022452.png" alt="">
+                </div>
+                <div class="explore">
+                    <div class="part">
+                        <label>LAPTOP</label>
+                    </div>
+                    <div class="part">
+                        <a href="#"><button>Explore</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-container">
+                <div class="image-show">
+                    <img src="src/images/articles/iphone 13 pro max-1690294056.png" alt="">
+                </div>
+                <div class="explore">
+                    <div class="part">
+                        <label>PHONE</label>
+                    </div>
+                    <div class="part">
+                        <a href="#"><button>Explore</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-container">
+                <div class="image-show">
+                    <img src="src/images/articles/jbl airpod-601820217.png" alt="">
+                </div>
+                <div class="explore">
+                    <div class="part">
+                        <label>AIRPOD</label>
+                    </div>
+                    <div class="part">
+                        <a href="#"><button>Explore</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-container">
+                <div class="image-show">
+                    <img src="src/images/articles/samsung-77808960.png" alt="">
+                </div>
+                <div class="explore">
+                    <div class="part">
+                        <label>APPLE WATCH</label>
+                        <p></p>
+                    </div>
+                    <div class="part">
+                        <a href="#"><button>Explore</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
