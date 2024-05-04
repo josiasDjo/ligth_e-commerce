@@ -15,21 +15,14 @@
 
     <div class="accueil">
         <i class="fa-solid fa-chevron-left"></i>
-        <?php echo $show_items.'<br/>'; echo $error.'<br/>' ?>
+        <?php ?>
         <i class="fa-solid fa-chevron-right"></i>
     </div>
 
     <div class="container_accueil">
         <h1>OUR PRODUCTS</h1>
         <div class="container">
-            <div class="sub-container">
-                <div class="nom">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="explore">
-                    <a href="#"><button>Explore</button></a>
-                </div>
-            </div>
+            <!--  -->
         </div>
     </div>
 </body>
