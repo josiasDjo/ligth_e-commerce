@@ -10,10 +10,12 @@
 <body>
     <?php  
         require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarUti.php';
+        require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce'. DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'showdataHome.php';
     ?>
 
     <div class="accueil">
         <i class="fa-solid fa-chevron-left"></i>
+        <?php echo $show_items.'<br/>'; echo $error.'<br/>' ?>
         <i class="fa-solid fa-chevron-right"></i>
     </div>
 
