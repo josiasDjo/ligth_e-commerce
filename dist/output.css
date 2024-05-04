@@ -666,10 +666,19 @@ video {
 }
 
 .container_accueil .container .sub-container .image-show {
+  display: flex;
   height: 83.333333%;
   width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  opacity: 0.9;
+  background-color: #051620;
+}
+
+.container_accueil .container .sub-container .image-show img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* PAGE DE CONNEXION */
