@@ -36,7 +36,9 @@
 .container_accueil .container .sub-container {
     @apply w-96 bg-gray-300 p-3 h-72 mb-36 rounded-xl;
 }
-
+.container_accueil .container .sub-container .image-show {
+    @apply w-full h-5/6 bg-red-500;
+}
 
 /* PAGE DE CONNEXION */
 

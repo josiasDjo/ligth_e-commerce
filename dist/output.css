@@ -665,6 +665,13 @@ video {
   padding: 0.75rem;
 }
 
+.container_accueil .container .sub-container .image-show {
+  height: 83.333333%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 /* PAGE DE CONNEXION */
 
 .conn_container {

@@ -28,7 +28,7 @@
             $descriP = $res['description'];
             $image_P = $res['image'];
             echo "  <div class=\"sub-container\">
-                <div class=\"nom\">
+                <div class=\"image-show\">
                     <img src=\"../../src/images/articles/$image_P \" alt=\"\">
                 </div>
                 <div class=\"explore\">
