@@ -17,6 +17,7 @@
     } else {
         echo "Aucun résultat trouvé !";
     }
+    echo 'dfjksf' . $email;
 
 ?>
 

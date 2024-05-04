@@ -6,11 +6,11 @@
 
 //  ---------- check connexion -------------------
     $error = "";
-    $email_use = $_POST['email'];
     if (isset($_POST['checkSignIn'])) {
         if (empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
             $error = 'Tout les champs sont requis ! ';
         } else {
+            global $email;
             $email = $_POST['email'];
             $phone = $_POST['phone'];
             $password = $_POST['password'];
