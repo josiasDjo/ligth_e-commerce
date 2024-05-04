@@ -1,9 +1,10 @@
-<?php require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'condb.php'; ?>
+<?php 
+    require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'condb.php'; 
+?>
 <?php session_start(); ?>
 <?php 
 
 //  ---------- check connexion -------------------
-
     $error = "";
     if (isset($_POST['checkSignIn'])) {
         if (empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
@@ -34,7 +35,7 @@
                 if ($phone_bd == $phone) {   
                     if (password_verify($password, $password_bd)) {
                         $_SESSION['admin'] = $res;
-                        header ("location : ../../../pages/messages.php");
+                        header("Location: ../pages/messages.php");
                         echo "messages accept ! ";
                         exit();
                     } else {
