@@ -7,12 +7,16 @@
     $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
 
     // $prenom_bd ="";
+    if ($total != 0) { 
+        foreach ($resultat as $res) {
+            $nom_bd = $res['nom'];
+            $prenom_bd = $res['prenom'];
 
-    foreach ($resultat as $res) {
-        $nom_bd = $res['nom'];
-        $prenom_bd = $res['prenom'];
+            echo 'Le nom est : ' . $prenom_bd;
+        }
+    } else {
+        echo "Aucun résultat trouvé !";
     }
-    echo $prenom_bd;
 
 ?>
 
@@ -23,6 +27,6 @@
         <li><a href="messages.php">Messages</a></li>
         <li><a href="addNew.php">Add new Articles</a></li>
         <li><a href="settings.php">Settings</a></li>
-        <li><a href=""><button> <?php echo $prenom_bd; ?> </button></a></li>       
+        <li><a href=""><button> <?php ?> </button></a></li>       
     </ul>
 </div>

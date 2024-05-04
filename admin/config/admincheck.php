@@ -6,7 +6,7 @@
 
 //  ---------- check connexion -------------------
     $error = "";
-    $email = "";
+    $email_use = $_POST['email'];
     if (isset($_POST['checkSignIn'])) {
         if (empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['password'])) {
             $error = 'Tout les champs sont requis ! ';
@@ -37,7 +37,6 @@
                     if (password_verify($password, $password_bd)) {
                         $_SESSION['admin'] = $res;
                         header("Location: ../pages/messages.php");
-                        echo "messages accept ! ";
                         exit();
                     } else {
                         $error = "Numéro incorrect ! ";
