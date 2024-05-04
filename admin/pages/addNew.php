@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarAd.php'; ?>
+    <?php 
+        require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarAd.php';
+        require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'addArticleBack.php';
+    ?>
 
     <div class="container-addArt">
         <div class="part-bg">
@@ -33,7 +36,7 @@
                         <input type="text" name="nom" id="">
                         <label for="prix">Price</label>
                         <input type="number" name="prix" id="">
-                        <select name="" id="">
+                        <select name="category" id="">
                             <option value="vide"></option>
                             <option value="appleWatch">Apple Watch</option>
                             <option value="phone">Phone</option>
@@ -42,8 +45,7 @@
                         </select>
                         <label for="description">Description</label>
                         <textarea name="description" id="" cols="30" rows="4"></textarea>
-                        <!-- <input type="text" name="description" id="" > -->
-                        <input type="submit" value="VALIDATE" class="valide">
+                        <input type="submit" value="VALIDATE" name="envoisArticle" class="valide">
                     </form>
                 </div>
             </div>
