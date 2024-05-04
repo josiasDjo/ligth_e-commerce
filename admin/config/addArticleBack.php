@@ -11,19 +11,31 @@
             $nom_items = $_POST['nom'];
             $prix_items = $_POST['prix'];
             $image_items = $_FILES['image'] ['name'];
+            $image_items_tmp = $_FILES['image'] ['tmp_name'];
             $category_items = $_POST['category'];
 
             if ($image_items != "") {
                 $ext = pathinfo($image_items, PATHINFO_EXTENSION);
                 $file_names = basename($image_items, '-' . $ext);
-            }
 
-            $sql = $bdd -> prepare("INSERT INTO tproduit (:nom, :prix, :description, :image)");
-            $sql -> bindParam(':nom', $nom_items);
-            $sql -> bindParam(':prix', $prix_items);
-            $sql -> bindParam(':description', $description_items);
-            $sql -> bindParam(':image', $image_items);
-            $sql -> execute();
+                if ($ext != "jpg" || $ext != "jpeg" || $ext != "png" || $ext != "gif") {
+                    $error = "Extension non permi * (\".jpeg, .png, .jpg, .gif\")";
+                } else {
+                    $image_name = $nom_items . rand() . $ext;
+                    move_uploaded_file($image_items_tmp, '../../src/images/articles' . $image_name);
+
+                    
+                    $sql = $bdd -> prepare("INSERT INTO tproduit (:nom, :prix, :description, :image)");
+                    $sql -> bindParam(':nom', $nom_items);
+                    $sql -> bindParam(':prix', $prix_items);
+                    $sql -> bindParam(':description', $description_items);
+                    $sql -> bindParam(':image', $image_items);
+                    $sql -> execute();
+
+                }
+            } else {
+                $error = "Une photo est requis !! ";
+            }
         }
 
     }
