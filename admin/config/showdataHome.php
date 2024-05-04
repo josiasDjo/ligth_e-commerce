@@ -32,9 +32,13 @@
                     <img src=\"../../src/images/articles/$image_P \" alt=\"\">
                 </div>
                 <div class=\"explore\">
-                    <label>$prix_P</label>
-                    <p>$descriP</p>
-                    <a href=\"#\"><button>Explore</button></a>
+                    <div class=\"part\">
+                        <label>$prix_P</label>
+                        <p>$descriP</p>
+                    </div>
+                    <div class=\"part\">
+                        <a href=\"#\"><button>Explore</button></a>
+                    </div>
                 </div>
             </div>";
         }
