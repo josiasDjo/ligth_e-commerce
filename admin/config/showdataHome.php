@@ -29,10 +29,11 @@
             $image_P = $res['image'];
             echo "  <div class=\"sub-container\">
                 <div class=\"nom\">
-                    <img src=\"../../src/images/articles/<?php echo $image_P ?>\" alt=\"\">
+                    <img src=\"../../src/images/articles/$image_P \" alt=\"\">
                 </div>
                 <div class=\"explore\">
-                    <p>lorem</p>
+                    <label>$prix_P</label>
+                    <p>$descriP</p>
                     <a href=\"#\"><button>Explore</button></a>
                 </div>
             </div>";

@@ -10,7 +10,6 @@
 <body>
     <?php  
         require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarUti.php';
-        require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce'. DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'showdataHome.php';
     ?>
 
     <div class="accueil">
@@ -22,7 +21,7 @@
     <div class="container_accueil">
         <h1>OUR PRODUCTS</h1>
         <div class="container">
-            <!--  -->
+            <?php require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce'. DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'showdataHome.php';?>
         </div>
     </div>
 </body>
