@@ -876,6 +876,16 @@ video {
   color: #E4800B;
 }
 
+.container-addArt .part-Add .rendu .container-add label {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.container-addArt .part-Add .rendu .container-add p {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .container-addArt .part-Add .ajouter {
   position: absolute;
   right: 0px;

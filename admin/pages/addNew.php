@@ -37,7 +37,7 @@
                         <label for="nom">Name</label>
                         <input type="text" name="nom" id="">
                         <label for="prix">Price</label>
-                        <input type="number" name="prix" id="">
+                        <input type="number" name="prix" id="" value="$">
                         <select name="category" id="">
                             <option value="vide"></option>
                             <option value="appleWatch">Apple Watch</option>

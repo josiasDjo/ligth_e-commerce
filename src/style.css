@@ -139,6 +139,12 @@
     @apply font-bold;
     color: #E4800B;
 }
+.container-addArt .part-Add .rendu .container-add label {
+    @apply text-white;
+}
+.container-addArt .part-Add .rendu .container-add p {
+    @apply text-white;
+}
 .container-addArt .part-Add .ajouter {
     @apply w-2/5 h-96 absolute right-0;
 }

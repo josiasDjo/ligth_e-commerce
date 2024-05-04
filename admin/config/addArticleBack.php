@@ -36,18 +36,15 @@
 
                         $dateto_to_day = date("Y-M-D H:i:s");
 
-                        $sql = $bdd -> prepare("INSERT INTO tproduit (nom, prix, description, image, date) VALUES (:nom, :prix, :description, :image, :date)");
+                        $sql = $bdd -> prepare("INSERT INTO tproduit (nom, prix, description, image, date, nomCollection) VALUES (:nom, :prix, :description, :image, :date, :nomCollection)");
                         $sql -> bindParam(':nom', $nom_items);
                         $sql -> bindParam(':prix', $prix_items);
                         $sql -> bindParam(':description', $description_items);
                         $sql -> bindParam(':image', $image_name);
                         $sql -> bindParam(':date', $dateto_to_day);
+                        $sql -> bindParam(':nomCollection', $category_items);
 
                         $sql -> execute();
-
-                        $sql_cat = $bdd -> prepare("INSERT INTO tcollection (nom) VALUES (:nom)");
-                        $sql_cat -> bindParam(':nom', $category_items);
-                        $sql_cat -> execute();
                     }
                 } else {
                     $error = "Une photo est requis !! ";
