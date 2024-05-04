@@ -12,6 +12,22 @@
     <div class="container-explore">
         <h2>OUR PRODUCTS</h2>
         <?php require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navEplore.php'; ?>
+
+        <div class="container">
+            <div class="sub-container">
+                <div class="image-show">
+                    <img src="../src/images/articles/chromeBook 14-152022452.png" alt="">
+                </div>
+                <div class="explore">
+                    <div class="part">
+                        <label>LAPTOP</label>
+                    </div>
+                    <div class="part">
+                        <a href="#"><button>Explore</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
