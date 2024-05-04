@@ -882,6 +882,11 @@ video {
   width: 40%;
 }
 
+.container-addArt .part-Add .ajouter p {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
 .container-addArt .part-Add .ajouter form {
   display: flex;
   height: 24rem;
@@ -937,6 +942,8 @@ video {
 .container-addArt .part-Add .ajouter form .shoose {
   border-width: 2px;
   border-style: solid;
+  padding: 0.5rem;
+  padding-bottom: 1.75rem;
   background-color: #E4800B;
   border-color: #E4800B;
 }

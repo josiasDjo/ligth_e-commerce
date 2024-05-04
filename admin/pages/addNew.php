@@ -23,8 +23,9 @@
                     <div class="sub-image">
                         <img src="<?php echo ""; ?>" alt="">
                     </div>
-                    <h5> <?php echo ""; ?>dfdg </h5>
-                    <label><?php echo "" ?> fsf</label>
+                    <h5> <?php echo $nom_items; ?> </h5>
+                    <label><?php echo $prix_items; ?> fsf</label>
+                    <p> <?php echo $description_items; ?> </p>
                 </div>
             </div>
 
@@ -49,6 +50,7 @@
                         <input type="submit" value="VALIDATE" name="envoisArticle" class="valide">
                     </form>
                 </div>
+                <p> <?php echo $error ?> </p>
             </div>
         </div>
     </div>

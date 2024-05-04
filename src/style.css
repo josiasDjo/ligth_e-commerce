@@ -142,6 +142,9 @@
 .container-addArt .part-Add .ajouter {
     @apply w-2/5 h-96 absolute right-0;
 }
+.container-addArt .part-Add .ajouter p {
+    @apply text-red-400;
+}
 .container-addArt .part-Add .ajouter form {
     @apply flex flex-col h-96;
 }
@@ -165,7 +168,7 @@
     border-color: #E4800B;
 }
 .container-addArt .part-Add .ajouter form .shoose {
-    @apply border-2 border-solid;
+    @apply border-2 border-solid p-2 pb-7;
     background-color: #E4800B;
     border-color: #E4800B;
 }
