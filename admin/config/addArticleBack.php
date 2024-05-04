@@ -4,13 +4,11 @@
 
 <?php
     $error = "";
-    $nom_items = "";
-    $prix_items = "";
-    $description_items = "";
     if (isset($_POST['envoisArticle'])) {
         if (empty($_POST['nom']) || empty($_POST['prix'])) {
             $error = "Tout les champs sont requis ! ";
         } else {
+            global $nom_items;
             $nom_items = $_POST['nom'];
             $prix_items = $_POST['prix'];
             $category_items = $_POST['category'];
@@ -55,4 +53,6 @@
         }
 
     }
+
+    echo $nom_items;
 ?>
