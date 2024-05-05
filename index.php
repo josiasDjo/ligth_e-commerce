@@ -14,7 +14,6 @@
     ?>
 
     <div class="accueil">
-        <i class="fa-solid fa-chevron-left" id="iLeft"></i>
         <div id="scrolling-container">
             <ul id="scrolling-content">
                 <?php  
@@ -43,7 +42,6 @@
                 ?>
             </ul>
         </div>
-        <i class="fa-solid fa-chevron-right" id="iRight"></i>
     </div>
 
     <div class="container_accueil">

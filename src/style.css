@@ -26,20 +26,22 @@
     @apply w-full p-10 justify-center items-center flex bg-gray-200 mb-10;
     height: 400px;
 }
-.accueil #scrolling-content {
-    @apply whitespace-nowrap;
+.accueil #scrolling-container {
+    @apply justify-center items-center flex ;
+    height: 400px;
+    width: 500px;
 }
-.accueil ul li {
-    @apply hidden;
+.accueil #scrolling-container #scrolling-content {
+    @apply whitespace-nowrap justify-center items-center flex w-full h-full p-5 m-auto;
 }
-.accueil ul li:first-child {
+.accueil #scrolling-container #scrolling-content li {
+    @apply hidden w-full h-full items-center justify-center flex;
+}
+.accueil #scrolling-container #scrolling-content li img {
+    @apply max-w-full max-h-full;
+}
+.accueil #scrolling-container #scrolling-content li:first-child {
     @apply block;
-}
-.accueil #iLeft {
-    @apply absolute left-6 text-5xl text-gray-500;
-}
-.accueil #iRight {
-    @apply absolute right-3 text-5xl text-gray-500;
 }
 .container_accueil {
     @apply w-10/12 justify-center items-center flex m-auto flex-col;
