@@ -2,10 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media (min-width: 1024px) {
+        
+}
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 640px) {
+    
+}
+
+
 /* navbar disgn */
 .navbarUti {
     @apply w-full h-20 text-white justify-center items-center flex;
     background-color: #051620;
+
+    @media (min-width: 1024px) {
+        
+    }
+    @media (min-width: 768px) {
+        
+    }
+    @media (min-width: 640px) {
+        
+    }
 }
 .navbarUti ul {
     @apply flex flex-row;

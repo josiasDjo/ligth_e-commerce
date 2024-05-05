@@ -588,6 +588,15 @@ video {
   }
 }
 
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 640px) {
+}
+
 /* navbar disgn */
 
 .navbarUti {
@@ -599,6 +608,12 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   background-color: #051620;
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 640px) {
+  }
 }
 
 .navbarUti ul {
