@@ -15,28 +15,32 @@
 
     <div class="accueil">
         <i class="fa-solid fa-chevron-left"></i>
-        <?php  
-            $sql = $bdd -> prepare("SELECT * FROM tproduit");
-            $sql -> execute();
-            $all = $sql -> rowCount();
-            $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
-            
-            $compteur = 6;
-            if ($all != 0) {
-                foreach ($resultat as $res) {
-                    while ($compteur < 6) {
+        <ul>
+            <?php  
+                $sql = $bdd -> prepare("SELECT * FROM tproduit");
+                $sql -> execute();
+                $all = $sql -> rowCount();
+                $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
+                
+                $compteur = 6;
+                if ($all != 0) {
+                    foreach ($resultat as $res) {
+                        while ($compteur < 6) {
+                            $image_items_name = $res['image'];
+                            echo "  
+                                <li>
+                                    <img src=\"src/images/articles/$image_items_name\" alt=\"\">
+                                </li>
+                            ";
 
-                        echo "
-                            
-                        ";
-
-                        $compteur++;
+                            $compteur++;
+                        }
                     }
+                } else {
+                    $error = "Aucun élément trouvé ! ";
                 }
-            } else {
-                $error = "Aucun élément trouvé ! ";
-            }
-        ?>
+            ?>
+        </ul>
         <i class="fa-solid fa-chevron-right"></i>
     </div>
 
