@@ -277,7 +277,7 @@
 /* NAV EXPLORE */
 
 .navExplore {
-    @apply w-full justify-center items-center flex mt-6;
+    @apply w-full justify-center items-center flex mt-6 mb-10;
 }
 .navExplore ul {
     @apply flex flex-row;
@@ -291,8 +291,32 @@
 
 
 .container-explore {
-    @apply w-full p-5;
+    @apply w-full p-5 m-auto justify-center items-center ;
 }
 .container-explore h2 {
     @apply text-center text-3xl font-bold m-10;
+}
+.container-explore .container {
+    @apply flex flex-wrap justify-center items-center m-auto w-11/12 bg-red-300;
+}
+.container-explore .container .sub-container {
+    @apply w-80 p-3 h-72 mb-16 rounded-xl text-white mr-12 ml-12;
+    background-color: #051620;
+}
+.container-explore .container .sub-container .image-show {
+    @apply w-full h-5/6 justify-center items-center flex opacity-90 p-5 bg-slate-200;
+}
+.container-explore .container .sub-container .image-show img {
+    @apply max-w-full max-h-full;
+}
+.container-explore .container .sub-container .explore {
+    @apply w-full flex flex-row pt-2;
+}
+.container-explore .container .sub-container .explore .part {
+    @apply w-2/4 relative;
+}
+.container-explore .container .sub-container .explore .part button {
+    @apply border-2 border-solid right-0 absolute p-1 pl-4 pr-4 rounded-lg;
+    border-color: #E4800B;
+    background-color: #E4800B;
 }

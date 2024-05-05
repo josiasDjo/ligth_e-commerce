@@ -3,9 +3,9 @@
 
     $req = "phone";
     $sql = $bdd -> prepare("SELECT * FROM tproduit WHERE nomCollection = ?");
-    $sql -> execute(array($phone));
+    $sql -> execute(array($req));
 
-    $total = $sql -> rowCount().
+    $total = $sql -> rowCount();
     $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
 
     $error = "";
@@ -16,7 +16,6 @@
             $description_items = $res['description'];
             $image_items_name = $res['image'];
             echo " 
-            <div class=\"container\">
                 <div class=\"sub-container\">
                     <div class=\"image-show\">
                         <img src=\"../src/images/articles/$image_items_name\" alt=\"\">
@@ -27,11 +26,10 @@
                             <p>$description_items</p>
                         </div>
                         <div class=\"part\">
-                            <a href=\"#\"><button>Explore</button></a>
+                            <a href=\"#\"><button>Buy</button></a>
                         </div>
                     </div>
-                </div>
-            </div>";
+                </div>";
         }
     } else {
         $error = "Aucun élement trouvé ! ";

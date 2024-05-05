@@ -1158,6 +1158,7 @@ video {
 
 .navExplore {
   margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
   display: flex;
   width: 100%;
   align-items: center;
@@ -1179,7 +1180,10 @@ video {
 /* explore disign */
 
 .container-explore {
+  margin: auto;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   padding: 1.25rem;
 }
 
@@ -1189,4 +1193,70 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
+}
+
+.container-explore .container {
+  margin: auto;
+  display: flex;
+  width: 91.666667%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.container-explore .container .sub-container {
+  margin-bottom: 4rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  height: 18rem;
+  width: 20rem;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-color: #051620;
+}
+
+.container-explore .container .sub-container .image-show {
+  display: flex;
+  height: 83.333333%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  opacity: 0.9;
+}
+
+.container-explore .container .sub-container .image-show img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.container-explore .container .sub-container .explore {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding-top: 0.5rem;
+}
+
+.container-explore .container .sub-container .explore .part {
+  position: relative;
+  width: 50%;
+}
+
+.container-explore .container .sub-container .explore .part button {
+  position: absolute;
+  right: 0px;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-color: #E4800B;
+  background-color: #E4800B;
 }
