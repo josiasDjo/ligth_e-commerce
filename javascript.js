@@ -20,3 +20,14 @@ scrollingContainer.addEventListener('mouseenter', function() {
 scrollingContainer.addEventListener('mouseleave', function() {
     scrollInterval = setInterval(scroll, 3000);
 });
+
+
+// Récupérez l'élément que vous souhaitez animer
+var element = document.getElementsByClassName('container_accueil');
+
+// Utilisez GSAP pour créer l'animation
+gsap.to(element, { 
+    duration: 1, // Durée de l'animation en secondes
+    scrollTop: 500, // Défilement jusqu'à la position 500 pixels du haut de l'élément
+    ease: 'power2.out' // Courbe d'animation
+});
