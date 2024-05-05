@@ -11,15 +11,20 @@
     $error = "";
     if ($total != 0) {
         foreach ($resultat as $res) {
+            $nom_items = $res['nom'];
+            $prix_items = $res['prix'];
+            $description_items = $res['description'];
+            $image_items_name = $res['image'];
             echo " 
             <div class=\"container\">
                 <div class=\"sub-container\">
                     <div class=\"image-show\">
-                        <img src=\"../src/images/articles/chromeBook 14-152022452.png\" alt=\"\">
+                        <img src=\"../src/images/articles/$image_items_name\" alt=\"\">
                     </div>
                     <div class=\"explore\">
                         <div class=\"part\">
-                            <label>LAPTOP</label>
+                            <label>$nom_items</label>
+                            <p>$description_items</p>
                         </div>
                         <div class=\"part\">
                             <a href=\"#\"><button>Explore</button></a>
