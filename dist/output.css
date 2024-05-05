@@ -642,11 +642,21 @@ video {
   flex-direction: row;
 }
 
+.accueil ul li {
+  display: none;
+}
+
+.accueil ul li:first-child {
+  display: block;
+}
+
 .accueil #iLeft {
   position: absolute;
   left: 1.5rem;
   font-size: 3rem;
   line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .accueil #iRight {
@@ -654,6 +664,8 @@ video {
   right: 0.75rem;
   font-size: 3rem;
   line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .container_accueil {

@@ -29,11 +29,17 @@
 .accueil ul {
     @apply flex flex-row;
 }
+.accueil ul li {
+    @apply hidden;
+}
+.accueil ul li:first-child {
+    @apply block;
+}
 .accueil #iLeft {
-    @apply absolute left-6 text-5xl;
+    @apply absolute left-6 text-5xl text-gray-500;
 }
 .accueil #iRight {
-    @apply absolute right-3 text-5xl;
+    @apply absolute right-3 text-5xl text-gray-500;
 }
 .container_accueil {
     @apply w-10/12 justify-center items-center flex m-auto flex-col;
