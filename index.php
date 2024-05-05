@@ -14,7 +14,7 @@
     ?>
 
     <div class="accueil">
-        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-left" id="iLeft"></i>
         <ul>
             <?php  
                 $sql = $bdd -> prepare("SELECT * FROM tproduit");
@@ -25,7 +25,7 @@
                 $compteur = 6;
                 if ($all != 0) {
                     foreach ($resultat as $res) {
-                        while ($compteur < 6) {
+                        // while ($compteur < 6) {
                             $image_items_name = $res['image'];
                             echo "  
                                 <li>
@@ -34,14 +34,14 @@
                             ";
 
                             $compteur++;
-                        }
+                        // }
                     }
                 } else {
                     echo "Aucun élément trouvé ! ";
                 }
             ?>
         </ul>
-        <i class="fa-solid fa-chevron-right"></i>
+        <i class="fa-solid fa-chevron-right" id="iRight"></i>
     </div>
 
     <div class="container_accueil">

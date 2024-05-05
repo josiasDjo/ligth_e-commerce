@@ -26,7 +26,15 @@
     @apply w-full p-10 justify-center items-center flex bg-gray-200 mb-10;
     height: 400px;
 }
-
+.accueil ul {
+    @apply flex flex-row;
+}
+.accueil #iLeft {
+    @apply absolute left-6 text-5xl;
+}
+.accueil #iRight {
+    @apply absolute right-3 text-5xl;
+}
 .container_accueil {
     @apply w-10/12 justify-center items-center flex m-auto flex-col;
 }
