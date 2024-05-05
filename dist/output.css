@@ -637,9 +637,8 @@ video {
   height: 400px;
 }
 
-.accueil ul {
-  display: flex;
-  flex-direction: row;
+.accueil #scrolling-content {
+  white-space: nowrap;
 }
 
 .accueil ul li {
