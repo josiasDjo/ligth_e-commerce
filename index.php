@@ -37,7 +37,7 @@
                         }
                     }
                 } else {
-                    $error = "Aucun élément trouvé ! ";
+                    echo "Aucun élément trouvé ! ";
                 }
             ?>
         </ul>
