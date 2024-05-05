@@ -297,7 +297,7 @@
     @apply text-center text-3xl font-bold m-10;
 }
 .container-explore .container {
-    @apply flex flex-wrap justify-center items-center m-auto w-11/12 bg-red-300;
+    @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
 .container-explore .container .sub-container {
     @apply w-80 p-3 h-72 mb-16 rounded-xl text-white mr-6 ml-6;
@@ -319,4 +319,7 @@
     @apply border-2 border-solid right-0 absolute p-1 pl-4 pr-4 rounded-lg;
     border-color: #E4800B;
     background-color: #E4800B;
+}
+.container-explore .container .erreur {
+    @apply text-red-400 font-semibold;
 }
