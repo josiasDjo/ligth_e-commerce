@@ -10,11 +10,33 @@
 <body>
     <?php  
         require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarUti.php';
+        require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'condb.php';
     ?>
 
     <div class="accueil">
         <i class="fa-solid fa-chevron-left"></i>
-        <?php ?>
+        <?php  
+            $sql = $bdd -> prepare("SELECT * FROM tproduit");
+            $sql -> execute();
+            $all = $sql -> rowCount();
+            $resultat = $sql -> fetchAll(PDO::FETCH_ASSOC);
+            
+            $compteur = 6;
+            if ($all != 0) {
+                foreach ($resultat as $res) {
+                    while ($compteur < 6) {
+
+                        echo "
+                            
+                        ";
+
+                        $compteur++;
+                    }
+                }
+            } else {
+                $error = "Aucun élément trouvé ! ";
+            }
+        ?>
         <i class="fa-solid fa-chevron-right"></i>
     </div>
 
