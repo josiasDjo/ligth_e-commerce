@@ -1,6 +1,5 @@
 <div class="ft">
     <div class="icon-reseau">
-        <!-- icon réseaux  -->
 
         <i class="fa-brands fa-square-x-twitter"></i>
         <i class="fa-brands fa-square-instagram"></i>
@@ -9,7 +8,7 @@
     </div>
 
     <div class="contact">
-        <!-- contact et localisation -->
+
         <ul>
             <li><i class="fa-solid fa-location-dot"></i></li>
             <li>DRC, Nord-Kivu, Goma</li>
