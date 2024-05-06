@@ -22,6 +22,7 @@
             ?>
         </div>
     </div>
+    <script src="javascript.js"></script>
 
 </body>
 </html>

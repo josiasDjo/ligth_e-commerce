@@ -19,7 +19,7 @@
         </ul>
         <ul>
             <li><i class="fa-solid fa-message"></i></li>
-            <li>youremail@gmail.com</li>
+            <li>lighthouse@gmail.com</li>
         </ul>
 
     </div>
