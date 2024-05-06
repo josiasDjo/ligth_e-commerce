@@ -3,7 +3,7 @@
     $pathIndex = dirname(__DIR__)  . DIRECTORY_SEPARATOR . 'index.php';
 ?>
 <div class="navbarUti">
-    
+    <i class="fa-solid fa-bars"></i>
     <ul class="navbar-responsive" id="navbar-responsive">
         <li><a href="../../index.php">Home</a></li>
         <li><a href="../../pages/explore.php">Explore</a></li>

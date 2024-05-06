@@ -915,7 +915,6 @@ video {
 }
 
 .container-addA .part-bg img {
-  /* background-image: url(../src/images/warehouse.jpg); */
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -951,11 +950,19 @@ video {
 }
 
 .container-addArt .part-Add .rendu .container-add .sub-image {
+  display: flex;
   height: 80%;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
   padding: 1.25rem;
+}
+
+.container-addArt .part-Add .rendu .container-add .sub-image img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .container-addArt .part-Add .rendu .container-add h5 {
@@ -1301,6 +1308,27 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+/* footer disign */
+
+.ft {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-color: #051620;
+}
+
+.ft .icon-reseau {
+}
+
+.ft .contact {
+}
+
+.ft .tous-droit {
 }
 
 /* ----------------- responsive  ------------------------ */
@@ -1850,5 +1878,71 @@ video {
     font-weight: 600;
     --tw-text-opacity: 1;
     color: rgb(248 113 113 / var(--tw-text-opacity));
+  }
+
+  /* new articles disign */
+
+  .container-addArt {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-addArt .part-Add {
+    position: relative;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-addArt .part-Add .rendu {
+    position: relative;
+    margin: 0.75rem;
+    height: 24rem;
+    width: 91.666667%;
+    border-radius: 0.5rem;
+  }
+
+  .container-addArt .part-Add .ajouter {
+    position: relative;
+    margin-right: 0.5rem;
+    height: 24rem;
+    width: 91.666667%;
+  }
+
+  /* settings */
+
+  .container-set {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .container-set .sub-part1 {
+    display: none;
+  }
+
+  .container-set .sub-part1 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-set .sub-part1 ul li {
+    margin: 1.25rem;
+  }
+
+  .container-set .sub-part2 {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background-color: #051620;
   }
 }

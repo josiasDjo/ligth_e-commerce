@@ -159,7 +159,6 @@
     @apply w-4/12 absolute left-0 h-screen ;
 }
 .container-addA .part-bg img {
-    /* background-image: url(../src/images/warehouse.jpg); */
     @apply w-full bg-cover bg-center bg-no-repeat;
 }
 .container-addArt .part-Add {
@@ -173,7 +172,10 @@
     background-color: #051620;
 }
 .container-addArt .part-Add .rendu .container-add .sub-image {
-    @apply w-full h-4/5 bg-slate-400 p-5;
+    @apply w-full h-4/5 bg-slate-400 p-5 justify-center items-center flex;
+}
+.container-addArt .part-Add .rendu .container-add .sub-image img {
+    @apply max-w-full max-h-full;
 }
 .container-addArt .part-Add .rendu .container-add h5 {
     @apply font-bold;
@@ -345,7 +347,21 @@
 }
 
 
+/* footer disign */
 
+.ft {
+    @apply w-full text-white justify-center items-center flex;
+    background-color: #051620;
+}
+.ft .icon-reseau {
+
+}
+.ft .contact {
+
+}
+.ft .tous-droit {
+    
+}
 
 
 
@@ -620,5 +636,43 @@
     }
     .conn_container .sub-conn .content p {
         @apply text-red-400 font-semibold text-xs; 
+    }
+
+    
+    /* new articles disign */
+
+
+    .container-addArt {
+        @apply w-full relative h-screen justify-center items-center flex; 
+    }
+    .container-addArt .part-Add {
+        @apply w-full h-full relative justify-center items-center flex flex-row-reverse m-auto;
+    }
+    .container-addArt .part-Add .rendu {
+        @apply w-11/12 h-96 relative rounded-lg m-3;
+    }
+    .container-addArt .part-Add .ajouter {
+        @apply w-11/12 h-96 relative mr-2;
+    }
+
+
+    /* settings */
+
+
+    .container-set {
+        @apply w-full h-screen;
+    }
+    .container-set .sub-part1 {
+        @apply hidden;
+    }
+    .container-set .sub-part1 ul {
+        @apply flex flex-col;
+    }
+    .container-set .sub-part1 ul li {
+        @apply m-5;
+    }
+    .container-set .sub-part2 {
+        @apply w-full opacity-90 h-full absolute right-0;
+        background-color: #051620;
     }
 }
