@@ -590,6 +590,17 @@ video {
 
 /* navbar disgn */
 
+.navbarUti .btn-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+}
+
+.navbarUti .btn-navbar i {
+  display: none;
+}
+
 .navbarUti {
   display: flex;
   height: 5rem;
@@ -1825,16 +1836,26 @@ video {
 @media (max-width: 460px) {
   /* navbar disgn */
 
+  .navbarUti .btn-navbar i {
+    position: absolute;
+    left: 1rem;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    /* color: #051620; */
+  }
+
   .navbarUti {
     display: flex;
     height: 5rem;
     width: 100%;
     align-items: center;
     justify-content: center;
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+    background-color: #051620;
   }
 
   /* accueil */

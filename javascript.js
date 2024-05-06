@@ -1,3 +1,9 @@
+// menu bar
+
+function navbarChange() {
+    var menuBar = document.getElementsByClassName('btn-navbar')
+}
+
 // défilements des artices à la page d'accueil
 var scrollingContainer = document.getElementById('scrolling-container');
 var scrollingContent = document.getElementById('scrolling-content');
