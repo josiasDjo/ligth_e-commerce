@@ -370,12 +370,17 @@
 
 /* ----------------- responsive  ------------------------ */
 
+/* accueil */
+
 @media (min-width: 1024px) {
     /*  */
 }
 @media (min-width: 768px) {
+    .container_accueil {
+        @apply w-11/12 justify-center items-center flex m-auto flex-col;
+    }
     .container_accueil .container .sub-container {
-        @apply w-80 mr-8 ml-8;
+        @apply w-80 mr-2 ml-2;
     }
 }
 @media (min-width: 640px) {
