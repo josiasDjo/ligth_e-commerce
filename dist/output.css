@@ -1585,6 +1585,30 @@ video {
 @media (max-width: 640px) {
   /* navbar disgn */
 
+  .navbarUti .btn-navbar .open-nav, .close-nav {
+    position: absolute;
+    left: 0.75rem;
+  }
+
+  .navbarUti .btn-navbar .open-nav i {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .navbar-show-menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 18rem;
+    width: 100%;
+    flex-direction: column;
+    background-color: #051620;
+  }
+
   .navbarUti {
     display: flex;
     height: 5rem;
@@ -1860,6 +1884,9 @@ video {
   }
 
   .navbar-show-menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     display: flex;
     height: 18rem;
     width: 100%;

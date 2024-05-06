@@ -497,7 +497,18 @@
 @media (max-width: 640px) {
 
     /* navbar disgn */
+    .navbarUti .btn-navbar .open-nav, .close-nav {
+        @apply absolute left-3;
+    }
+    .navbarUti .btn-navbar .open-nav i {
+        @apply block text-white text-2xl;
+    }
     
+    .navbar-show-menu {
+        @apply w-full h-72 flex flex-col absolute top-0 left-0;
+        background-color: #051620;
+    }
+
     .navbarUti {
         @apply w-full h-20 text-white justify-center items-center flex;
         color: #051620;
@@ -631,7 +642,7 @@
         background-color: #051620;
     }
     .navbar-show-menu {
-        @apply w-full h-72 flex flex-col;
+        @apply w-full h-72 flex flex-col absolute top-0 left-0;
         background-color: #051620;
     }
 
