@@ -588,6 +588,10 @@ video {
   }
 }
 
+.block {
+  display: block;
+}
+
 /* navbar disgn */
 
 .navbarUti .btn-navbar {
@@ -615,6 +619,10 @@ video {
 .navbarUti ul {
   display: flex;
   flex-direction: row;
+}
+
+.navbarUti ul .close-nav {
+  display: none;
 }
 
 .navbarUti ul li {
@@ -1585,7 +1593,7 @@ video {
 @media (max-width: 640px) {
   /* navbar disgn */
 
-  .navbarUti .btn-navbar .open-nav, .close-nav {
+  .navbarUti .btn-navbar .open-nav {
     position: absolute;
     left: 0.75rem;
   }
@@ -1596,17 +1604,6 @@ video {
     line-height: 2rem;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .navbar-show-menu {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    height: 18rem;
-    width: 100%;
-    flex-direction: column;
-    background-color: #051620;
   }
 
   .navbarUti {
@@ -1620,24 +1617,64 @@ video {
     color: #051620;
   }
 
-  .navbarUti ul {
+  .navbarUti .navbar-responsive {
     display: none;
   }
 
-  .navbarUti ul li {
+  .navbarUti .navbar-responsive li {
     margin-right: 2rem;
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 600;
   }
 
-  .navbarUti ul li button {
+  .navbarUti .navbar-responsive li button {
     position: relative;
     border-radius: 0.5rem;
     padding: 0.25rem;
     padding-right: 1rem;
     padding-left: 1rem;
     background-color: #E4800B;
+  }
+
+  .navbarUti .navbar-show-menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: list-item;
+    height: 24rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-top: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    background-color: #051620;
+  }
+
+  .navbarUti .navbar-show-menu .close-nav {
+    display: block;
+  }
+
+  .navbarUti .navbar-show-menu .close-nav i {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .navbarUti .navbar-show-menu li {
+    margin-right: 2rem;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+
+  .navbarUti .navbar-show-menu li button {
+    position: relative;
+    border-style: none;
   }
 
   /* accueil */
@@ -1859,19 +1896,6 @@ video {
 @media (max-width: 460px) {
   /* navbar disgn */
 
-  .navbarUti .btn-navbar .open-nav, .close-nav {
-    position: absolute;
-    left: 0.75rem;
-  }
-
-  .navbarUti .btn-navbar .open-nav i {
-    display: block;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
   .navbarUti {
     display: flex;
     height: 5rem;
@@ -1880,17 +1904,6 @@ video {
     justify-content: center;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-    background-color: #051620;
-  }
-
-  .navbar-show-menu {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    height: 18rem;
-    width: 100%;
-    flex-direction: column;
     background-color: #051620;
   }
 

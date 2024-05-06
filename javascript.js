@@ -6,7 +6,19 @@ function navbarChange() {
     menuBar.classList.remove('navbar-responsive');
     menuBar.classList.add('navbar-show-menu');
 
-    
+    var closeNav = document.getElementsByClassName('close-nav');
+
+    // for (var i = 0; i < closeNav.length; i++) {
+    //     var closeNavChild = closeNav[i];
+
+    //     if (closeNavChild.style.display == "")
+    // }
+
+    if (closeNav.style.display == "none") {
+        closeNav.style.display = "block";
+    } else {
+        // 
+    }
 }
 
 // défilements des artices à la page d'accueil
