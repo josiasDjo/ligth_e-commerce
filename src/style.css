@@ -278,6 +278,7 @@
 
 .container-set .sub-part2 .content {
     @apply bg-white w-6/12 h-5/6 absolute right-16 rounded-2xl p-10 justify-center items-center flex flex-col m-auto;
+    height: 500px;
 }
 .container-set .sub-part2 .content h2 {
     @apply text-2xl font-sans font-bold mb-3;
@@ -382,6 +383,85 @@
     .container_accueil .container .sub-container {
         @apply w-80 mr-2 ml-2;
     }
+
+
+    /* PAGE DE CONNEXION */
+
+
+    .conn_container .sub-photo {
+        @apply w-4/12 absolute left-0 h-screen;
+    }
+    .conn_container .sub-conn {
+        @apply w-8/12;
+    }
+    .conn_container .sub-conn .content {
+        @apply bg-white w-7/12 h-5/6 absolute right-16 rounded-2xl p-5 justify-center items-center flex flex-col m-auto;
+    }
+    .conn_container .sub-conn .content p {
+        @apply text-red-400 font-semibold text-xs; 
+    }
+
+
+    /* new articles disign */
+
+
+    .container-addArt {
+        @apply w-full relative h-screen justify-center items-center flex; 
+    }
+    .container-addA .part-bg {
+        @apply hidden;
+    }
+    .container-addArt .part-Add {
+        @apply w-10/12 h-full relative justify-center items-center flex flex-wrap;
+    }
+    .container-addArt .part-Add .rendu {
+        @apply w-5/12 h-96 relative rounded-lg m-3;
+    }
+    .container-addArt .part-Add .ajouter {
+        @apply w-6/12 h-96 relative mr-2;
+    }
+
+
+    /* disign add admin */
+
+    .container-set .sub-part2 .content {
+        @apply bg-white w-8/12 absolute right-16 rounded-2xl p-6 justify-center items-center flex flex-col m-auto;
+        height: 500px;
+    }
+    .container-set .sub-part2 .content .form-align {
+        @apply justify-center items-center flex w-full p-3 flex-col;
+    }
+    .container-set .sub-part2 .content .form-align p {
+        @apply font-medium;
+        color: #051620;
+    }
+    .container-set .sub-part2 .content .form-align a {
+        color: #E4800B;
+    }
+    .container-set .sub-part2 .content form {
+        @apply flex flex-col w-full m-auto relative;
+    }
+    .container-set .sub-part2 .content form label {
+        @apply text-xs float-left;
+    }
+    .container-set .sub-part2 .content form input {
+        @apply border-2 border-solid w-full rounded-lg mb-4 p-1 h-8;
+    }
+    .container-set .sub-part2 .content form .btn-send {
+        @apply mt-6 font-bold;
+        background-color: #E4800B;
+        color: #051620;
+    }
+    .container-set .sub-part2 .content button {
+        @apply w-full h-7 absolute bottom-0 left-0 rounded-b-2xl;
+        background-color: #E4800B;
+    }
+
+
+
+
+
+
 }
 @media (min-width: 640px) {
         
