@@ -508,7 +508,7 @@
     }
 
     .navbarUti {
-        @apply w-full h-20 text-white justify-center items-center flex;
+        @apply w-full h-20 text-white justify-center items-center flex shadow-lg shadow-sky-950;
         color: #051620;
     }
     .navbarUti .navbar-responsive {
@@ -522,7 +522,7 @@
         background-color: #E4800B;
     }
     .navbarUti .navbar-show-menu {
-        @apply w-full h-96 list-item absolute top-0 left-0 text-white pl-10 pt-5;
+        @apply w-full h-96 list-item absolute top-0 left-0 text-white pl-10 pt-5 shadow-lg shadow-sky-950;
         background-color: #051620;
     }
     .navbarUti .navbar-show-menu .close-nav {
@@ -532,7 +532,7 @@
         @apply block text-white text-2xl;
     }
     .navbarUti .navbar-show-menu li {
-        @apply mr-8 font-semibold text-lg pb-5 pt-5;
+        @apply mr-8 font-semibold text-lg pb-4 pt-4;
     }
     .navbarUti .navbar-show-menu li button {
         @apply relative border-none;

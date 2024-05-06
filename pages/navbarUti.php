@@ -10,7 +10,7 @@
         </button>
     </div>
     <ul class="navbar-responsive" id="navbar-responsive">
-        <button onclick="navbarChange(); " class="close-nav">
+        <button onclick="navbarClose(); " class="close-nav">
             <i class="fa-solid fa-xmark"></i>
         </button>
         <li><a href="../../index.php">Home</a></li>

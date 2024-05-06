@@ -8,17 +8,18 @@ function navbarChange() {
 
     var closeNav = document.getElementsByClassName('close-nav');
 
-    // for (var i = 0; i < closeNav.length; i++) {
-    //     var closeNavChild = closeNav[i];
-
-    //     if (closeNavChild.style.display == "")
-    // }
-
     if (closeNav.style.display == "none") {
         closeNav.style.display = "block";
     } else {
         // 
     }
+}
+
+function navbarClose() {
+    var closemenu = document.getElementById('navbar-responsive');
+
+    closemenu.classList.remove('navbar-show-menu');
+    closemenu.classList.add('navbar-responsive');
 }
 
 // défilements des artices à la page d'accueil
