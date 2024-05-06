@@ -26,8 +26,6 @@
     </div>
     <div class="tous-droit">
         <!-- tous droit réservé -->
-
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-
+        <p>tous droits réservés</p>
     </div>
 </div>
