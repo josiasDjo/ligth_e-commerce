@@ -1,7 +1,7 @@
 // menu bar
 
 function navbarChange() {
-    var menuBar = document.getElementsById('navbar-responsive');
+    var menuBar = document.getElementById('navbar-responsive');
 
     menuBar.classList.remove('navbar-responsive');
     menuBar.classList.add('navbar-show-menu');

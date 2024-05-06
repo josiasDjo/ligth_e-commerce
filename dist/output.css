@@ -1591,10 +1591,9 @@ video {
     width: 100%;
     align-items: center;
     justify-content: center;
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: #051620;
   }
 
   .navbarUti ul {
@@ -1844,7 +1843,7 @@ video {
     line-height: 2rem;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-    /* color: #051620; */
+    color: #051620;
   }
 
   .navbarUti {

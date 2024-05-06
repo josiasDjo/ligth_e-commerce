@@ -499,7 +499,8 @@
     /* navbar disgn */
     
     .navbarUti {
-        @apply w-full h-20 text-white justify-center items-center flex bg-gray-200;
+        @apply w-full h-20 text-white justify-center items-center flex;
+        color: #051620;
     }
     .navbarUti ul {
         @apply hidden;
@@ -621,7 +622,7 @@
     /* navbar disgn */
     .navbarUti .btn-navbar i {
         @apply block text-white text-2xl absolute left-2;
-        /* color: #051620; */
+        color: #051620;
     }
     .navbarUti {
         @apply w-full h-20 text-white justify-center items-center flex;
