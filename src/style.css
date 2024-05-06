@@ -3,31 +3,11 @@
 @tailwind utilities;
 
 
-@media (min-width: 1024px) {
-        
-}
-@media (min-width: 768px) {
-    
-}
-@media (min-width: 640px) {
-    
-}
-
 
 /* navbar disgn */
 .navbarUti {
     @apply w-full h-20 text-white justify-center items-center flex;
     background-color: #051620;
-
-    @media (min-width: 1024px) {
-        
-    }
-    @media (min-width: 768px) {
-        
-    }
-    @media (min-width: 640px) {
-            
-    }
 }
 .navbarUti ul {
     @apply flex flex-row;
@@ -376,7 +356,10 @@
 @media (min-width: 1024px) {
     /*  */
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+
+    /* accueil */
+
     .container_accueil {
         @apply w-11/12 justify-center items-center flex m-auto flex-col;
     }
@@ -458,11 +441,184 @@
     }
 
 
+    /* explore disign */
+
+
+    .container-explore .container .sub-container {
+        @apply w-72 p-3 h-64 mb-14 rounded-xl text-white mr-3 ml-3;
+        background-color: #051620;
+    }
+    .container-explore .container .sub-container .explore .part {
+        @apply w-2/4 relative h-4;
+    }
+    .container-explore .container .sub-container .explore .part label {
+        @apply text-sm;
+    }
+    .container-explore .container .sub-container .explore .part p {
+        @apply text-sm;
+    }
 
 
 
 
 }
-@media (min-width: 640px) {
-        
+@media (max-width: 640px) {
+
+    /* navbar disgn */
+    
+    .navbarUti {
+        @apply w-full h-20 text-white justify-center items-center flex bg-gray-200;
+    }
+    .navbarUti ul {
+        @apply hidden;
+    }
+    .navbarUti ul li {
+        @apply mr-8 font-semibold text-lg;
+    }
+    .navbarUti ul li button {
+        @apply rounded-lg p-1 pr-4 pl-4 relative;
+        background-color: #E4800B;
+    }
+    
+    /* accueil */
+    
+    .container_accueil {
+        @apply w-11/12 justify-center items-center flex m-auto flex-col;
+    }
+    .container_accueil .container .sub-container {
+        @apply w-9/12 mr-2 ml-2 h-80;
+    }
+
+
+    /* PAGE DE CONNEXION */
+
+    .conn_container {
+        @apply w-full relative h-screen m-auto;
+    }
+    .conn_container .sub-photo {
+        @apply hidden;
+    }
+    .conn_container .sub-conn {
+        @apply w-full relative h-screen justify-center items-center flex;
+        background-color: #051620;
+        border-radius: 0;
+    }
+    .conn_container .sub-conn .content {
+        @apply bg-white w-8/12 h-5/6 absolute right-16 rounded-2xl p-10 justify-center items-center flex flex-col m-auto;
+    }
+    .conn_container .sub-conn .content p {
+        @apply text-red-400 font-semibold text-xs; 
+    }
+
+
+    /* new articles disign */
+
+
+    .container-addArt {
+        @apply w-full relative h-screen justify-center items-center flex; 
+    }
+    .container-addA .part-bg {
+        @apply hidden;
+    }
+    .container-addArt .part-Add {
+        @apply w-10/12 h-full relative justify-center items-center flex flex-wrap;
+    }
+    .container-addArt .part-Add .rendu {
+        @apply w-5/12 h-96 relative rounded-lg m-3;
+    }
+    .container-addArt .part-Add .ajouter {
+        @apply w-6/12 h-96 relative mr-2;
+    }
+
+
+    /* disign add admin */
+
+    .container-set .sub-part2 .content {
+        @apply bg-white w-8/12 absolute right-16 rounded-2xl p-6 justify-center items-center flex flex-col m-auto;
+        height: 500px;
+    }
+    .container-set .sub-part2 .content .form-align {
+        @apply justify-center items-center flex w-full p-3 flex-col;
+    }
+    .container-set .sub-part2 .content .form-align p {
+        @apply font-medium;
+        color: #051620;
+    }
+    .container-set .sub-part2 .content .form-align a {
+        color: #E4800B;
+    }
+    .container-set .sub-part2 .content form {
+        @apply flex flex-col w-full m-auto relative;
+    }
+    .container-set .sub-part2 .content form label {
+        @apply text-xs float-left;
+    }
+    .container-set .sub-part2 .content form input {
+        @apply border-2 border-solid w-full rounded-lg mb-4 p-1 h-8;
+    }
+    .container-set .sub-part2 .content form .btn-send {
+        @apply mt-6 font-bold;
+        background-color: #E4800B;
+        color: #051620;
+    }
+    .container-set .sub-part2 .content button {
+        @apply w-full h-7 absolute bottom-0 left-0 rounded-b-2xl;
+        background-color: #E4800B;
+    }
+
+
+    /* explore disign */
+
+
+    .container-explore .container .sub-container {
+        @apply w-72 p-3 h-64 mb-14 rounded-xl text-white mr-3 ml-3;
+        background-color: #051620;
+    }
+    .container-explore .container .sub-container .explore .part {
+        @apply w-2/4 relative h-4;
+    }
+    .container-explore .container .sub-container .explore .part label {
+        @apply text-sm;
+    }
+    .container-explore .container .sub-container .explore .part p {
+        @apply text-sm;
+    }
+}
+@media (max-width: 460px) {
+
+    /* navbar disgn */
+    
+    .navbarUti {
+        @apply w-full h-20 text-white justify-center items-center flex bg-gray-200;
+    }
+
+    /* accueil */
+    
+    .container_accueil {
+        @apply w-full justify-center items-center flex m-auto flex-col;
+    }
+    .container_accueil .container .sub-container {
+        @apply w-11/12 mr-2 ml-2 h-80;
+    }
+    
+    
+    /* PAGE DE CONNEXION */
+
+    .conn_container {
+        @apply w-full relative h-screen m-auto justify-center items-center flex;
+    }
+    .conn_container .sub-photo {
+        @apply hidden;
+    }
+    .conn_container .sub-conn {
+        @apply w-full relative h-screen justify-center items-center flex m-auto;
+        background-color: #051620;
+        border-radius: 0;
+    }
+    .conn_container .sub-conn .content {
+        @apply bg-white w-9/12 h-5/6 absolute right-16 rounded-2xl p-5 justify-center items-center flex flex-col m-auto;
+    }
+    .conn_container .sub-conn .content p {
+        @apply text-red-400 font-semibold text-xs; 
+    }
 }

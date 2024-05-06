@@ -588,15 +588,6 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
-}
-
-@media (min-width: 768px) {
-}
-
-@media (min-width: 640px) {
-}
-
 /* navbar disgn */
 
 .navbarUti {
@@ -608,12 +599,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   background-color: #051620;
-  @media (min-width: 1024px) {
-  }
-  @media (min-width: 768px) {
-  }
-  @media (min-width: 640px) {
-  }
 }
 
 .navbarUti ul {
@@ -1326,7 +1311,9 @@ video {
   /*  */
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  /* accueil */
+
   .container_accueil {
     margin: auto;
     display: flex;
@@ -1496,7 +1483,372 @@ video {
     border-bottom-left-radius: 1rem;
     background-color: #E4800B;
   }
+
+  /* explore disign */
+
+  .container-explore .container .sub-container {
+    margin-bottom: 3.5rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    height: 16rem;
+    width: 18rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    background-color: #051620;
+  }
+
+  .container-explore .container .sub-container .explore .part {
+    position: relative;
+    height: 1rem;
+    width: 50%;
+  }
+
+  .container-explore .container .sub-container .explore .part label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .container-explore .container .sub-container .explore .part p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
+  /* navbar disgn */
+
+  .navbarUti {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .navbarUti ul {
+    display: none;
+  }
+
+  .navbarUti ul li {
+    margin-right: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+
+  .navbarUti ul li button {
+    position: relative;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: #E4800B;
+  }
+
+  /* accueil */
+
+  .container_accueil {
+    margin: auto;
+    display: flex;
+    width: 91.666667%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container_accueil .container .sub-container {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    height: 20rem;
+    width: 75%;
+  }
+
+  /* PAGE DE CONNEXION */
+
+  .conn_container {
+    position: relative;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .conn_container .sub-photo {
+    display: none;
+  }
+
+  .conn_container .sub-conn {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #051620;
+    border-radius: 0;
+  }
+
+  .conn_container .sub-conn .content {
+    position: absolute;
+    right: 4rem;
+    margin: auto;
+    display: flex;
+    height: 83.333333%;
+    width: 66.666667%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: 2.5rem;
+  }
+
+  .conn_container .sub-conn .content p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(248 113 113 / var(--tw-text-opacity));
+  }
+
+  /* new articles disign */
+
+  .container-addArt {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-addA .part-bg {
+    display: none;
+  }
+
+  .container-addArt .part-Add {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 83.333333%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-addArt .part-Add .rendu {
+    position: relative;
+    margin: 0.75rem;
+    height: 24rem;
+    width: 41.666667%;
+    border-radius: 0.5rem;
+  }
+
+  .container-addArt .part-Add .ajouter {
+    position: relative;
+    margin-right: 0.5rem;
+    height: 24rem;
+    width: 50%;
+  }
+
+  /* disign add admin */
+
+  .container-set .sub-part2 .content {
+    position: absolute;
+    right: 4rem;
+    margin: auto;
+    display: flex;
+    width: 66.666667%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: 1.5rem;
+    height: 500px;
+  }
+
+  .container-set .sub-part2 .content .form-align {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+  }
+
+  .container-set .sub-part2 .content .form-align p {
+    font-weight: 500;
+    color: #051620;
+  }
+
+  .container-set .sub-part2 .content .form-align a {
+    color: #E4800B;
+  }
+
+  .container-set .sub-part2 .content form {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container-set .sub-part2 .content form label {
+    float: left;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .container-set .sub-part2 .content form input {
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.25rem;
+  }
+
+  .container-set .sub-part2 .content form .btn-send {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    background-color: #E4800B;
+    color: #051620;
+  }
+
+  .container-set .sub-part2 .content button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 1.75rem;
+    width: 100%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: #E4800B;
+  }
+
+  /* explore disign */
+
+  .container-explore .container .sub-container {
+    margin-bottom: 3.5rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    height: 16rem;
+    width: 18rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    background-color: #051620;
+  }
+
+  .container-explore .container .sub-container .explore .part {
+    position: relative;
+    height: 1rem;
+    width: 50%;
+  }
+
+  .container-explore .container .sub-container .explore .part label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .container-explore .container .sub-container .explore .part p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 460px) {
+  /* navbar disgn */
+
+  .navbarUti {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  /* accueil */
+
+  .container_accueil {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container_accueil .container .sub-container {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    height: 20rem;
+    width: 91.666667%;
+  }
+
+  /* PAGE DE CONNEXION */
+
+  .conn_container {
+    position: relative;
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conn_container .sub-photo {
+    display: none;
+  }
+
+  .conn_container .sub-conn {
+    position: relative;
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #051620;
+    border-radius: 0;
+  }
+
+  .conn_container .sub-conn .content {
+    position: absolute;
+    right: 4rem;
+    margin: auto;
+    display: flex;
+    height: 83.333333%;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: 1.25rem;
+  }
+
+  .conn_container .sub-conn .content p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(248 113 113 / var(--tw-text-opacity));
+  }
 }
