@@ -1315,6 +1315,7 @@ video {
 .ft {
   display: flex;
   width: 100%;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   --tw-text-opacity: 1;
@@ -1323,12 +1324,38 @@ video {
 }
 
 .ft .icon-reseau {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft .contact li {
+  margin: 0.5rem;
+}
+
+.ft .icon-reseau i {
+  margin: 1.25rem;
 }
 
 .ft .contact {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft .contact ul {
+  margin: 1.25rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .ft .tous-droit {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------------- responsive  ------------------------ */

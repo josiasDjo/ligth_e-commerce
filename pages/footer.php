@@ -25,7 +25,6 @@
 
     </div>
     <div class="tous-droit">
-        <!-- tous droit réservé -->
-        <p>tous droits réservés</p>
+        <p>&copy; 2024 light. Tous droits réservés</p>
     </div>
 </div>

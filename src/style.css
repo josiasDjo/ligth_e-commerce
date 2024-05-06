@@ -350,17 +350,26 @@
 /* footer disign */
 
 .ft {
-    @apply w-full text-white justify-center items-center flex;
+    @apply w-full text-white justify-center items-center flex flex-col;
     background-color: #051620;
 }
 .ft .icon-reseau {
-
+    @apply w-full justify-center items-center flex;
+}
+.ft .contact li {
+    @apply m-2;
+}
+.ft .icon-reseau i{
+    @apply m-5;
 }
 .ft .contact {
-
+    @apply w-full justify-center items-center flex;
+}
+.ft .contact ul {
+    @apply flex flex-row m-5;
 }
 .ft .tous-droit {
-    
+    @apply w-full justify-center items-center flex;
 }
 
 
