@@ -620,12 +620,18 @@
 @media (max-width: 460px) {
 
     /* navbar disgn */
-    .navbarUti .btn-navbar i {
-        @apply block text-white text-2xl absolute left-2;
-        color: #051620;
+    .navbarUti .btn-navbar .open-nav, .close-nav {
+        @apply absolute left-3;
+    }
+    .navbarUti .btn-navbar .open-nav i {
+        @apply block text-white text-2xl;
     }
     .navbarUti {
         @apply w-full h-20 text-white justify-center items-center flex;
+        background-color: #051620;
+    }
+    .navbar-show-menu {
+        @apply w-full h-72 flex flex-col;
         background-color: #051620;
     }
 

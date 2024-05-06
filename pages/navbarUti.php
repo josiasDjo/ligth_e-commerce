@@ -4,8 +4,11 @@
 ?>
 <div class="navbarUti">
     <div class="btn-navbar">
-        <button onclick="navbarChange(); ">
-            <i class="fa-solid fa-bars"></i> btn
+        <button onclick="navbarChange(); " class="close-nav">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button onclick="navbarChange(); " class="open-nav">
+            <i class="fa-solid fa-bars"></i>
         </button>
     </div>
     <ul class="navbar-responsive" id="navbar-responsive">

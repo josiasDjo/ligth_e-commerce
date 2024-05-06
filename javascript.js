@@ -5,6 +5,8 @@ function navbarChange() {
 
     menuBar.classList.remove('navbar-responsive');
     menuBar.classList.add('navbar-show-menu');
+
+    
 }
 
 // défilements des artices à la page d'accueil

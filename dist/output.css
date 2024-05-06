@@ -1835,15 +1835,17 @@ video {
 @media (max-width: 460px) {
   /* navbar disgn */
 
-  .navbarUti .btn-navbar i {
+  .navbarUti .btn-navbar .open-nav, .close-nav {
     position: absolute;
-    left: 0.5rem;
+    left: 0.75rem;
+  }
+
+  .navbarUti .btn-navbar .open-nav i {
     display: block;
     font-size: 1.5rem;
     line-height: 2rem;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-    color: #051620;
   }
 
   .navbarUti {
@@ -1854,6 +1856,14 @@ video {
     justify-content: center;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+    background-color: #051620;
+  }
+
+  .navbar-show-menu {
+    display: flex;
+    height: 18rem;
+    width: 100%;
+    flex-direction: column;
     background-color: #051620;
   }
 
