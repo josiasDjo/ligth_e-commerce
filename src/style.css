@@ -26,7 +26,7 @@
         
     }
     @media (min-width: 640px) {
-        
+            
     }
 }
 .navbarUti ul {
@@ -73,6 +73,7 @@
 }
 .container_accueil .container {
     @apply flex flex-wrap justify-center items-center;
+
 }
 .container_accueil .container .sub-container {
     @apply w-96 p-3 h-72 mb-16 rounded-xl text-white mr-12 ml-12;
@@ -360,4 +361,23 @@
 }
 .container-explore .container .erreur {
     @apply text-red-400 font-semibold;
+}
+
+
+
+
+
+
+/* ----------------- responsive  ------------------------ */
+
+@media (min-width: 1024px) {
+    /*  */
+}
+@media (min-width: 768px) {
+    .container_accueil .container .sub-container {
+        @apply w-80 mr-8 ml-8;
+    }
+}
+@media (min-width: 640px) {
+        
 }

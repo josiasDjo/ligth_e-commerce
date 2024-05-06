@@ -48,9 +48,6 @@
     <div class="container_accueil">
         <h1>OUR PRODUCTS</h1>
         <div class="container">
-            <?php 
-                // require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'e-commerce'. DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'showdataHome.php';
-            ?>
             <div class="sub-container">
                 <div class="image-show">
                     <img src="src/images/articles/chromeBook 14-152022452.png" alt="">
