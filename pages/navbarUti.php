@@ -5,7 +5,7 @@
 <div class="navbarUti">
     <div class="btn-navbar">
         <button onclick="navbarChange(); ">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i> btn
         </button>
     </div>
     <ul class="navbar-responsive" id="navbar-responsive">

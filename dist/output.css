@@ -1838,7 +1838,7 @@ video {
 
   .navbarUti .btn-navbar i {
     position: absolute;
-    left: 1rem;
+    left: 0.5rem;
     display: block;
     font-size: 1.5rem;
     line-height: 2rem;

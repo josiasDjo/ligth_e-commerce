@@ -620,7 +620,7 @@
 
     /* navbar disgn */
     .navbarUti .btn-navbar i {
-        @apply block text-white text-2xl absolute left-4;
+        @apply block text-white text-2xl absolute left-2;
         /* color: #051620; */
     }
     .navbarUti {

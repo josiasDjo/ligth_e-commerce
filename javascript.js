@@ -1,7 +1,10 @@
 // menu bar
 
 function navbarChange() {
-    var menuBar = document.getElementsByClassName('btn-navbar')
+    var menuBar = document.getElementsById('navbar-responsive');
+
+    menuBar.classList.remove('navbar-responsive');
+    menuBar.classList.add('navbar-show-menu');
 }
 
 // défilements des artices à la page d'accueil
