@@ -36,6 +36,8 @@
 
                         $dateto_to_day = date("Y-M-D H:i:s");
 
+
+                        //insertion dans la base de données 
                         $sql = $bdd -> prepare("INSERT INTO tproduit (nom, prix, description, image, date, nomCollection) VALUES (:nom, :prix, :description, :image, :date, :nomCollection)");
                         $sql -> bindParam(':nom', $nom_items);
                         $sql -> bindParam(':prix', $prix_items);
