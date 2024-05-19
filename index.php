@@ -51,7 +51,7 @@
         <div class="container">
             <div class="sub-container">
                 <div class="image-show">
-                    <img src="src/images/articles/chromeBook 14-152022452.png" alt="">
+                    <img src="src/images/articles/chromeBook 14-1415890289.png" alt="">
                 </div>
                 <div class="explore">
                     <div class="part">
@@ -65,7 +65,7 @@
 
             <div class="sub-container">
                 <div class="image-show">
-                    <img src="src/images/articles/iphone 13 pro max-1690294056.png" alt="">
+                    <img src="src/images/articles/iphone 13 pro max-874276815.png" alt="">
                 </div>
                 <div class="explore">
                     <div class="part">
@@ -79,7 +79,7 @@
 
             <div class="sub-container">
                 <div class="image-show">
-                    <img src="src/images/articles/jbl airpod-601820217.png" alt="">
+                    <img src="src/images/articles/jbl airpod-219855130.png" alt="">
                 </div>
                 <div class="explore">
                     <div class="part">
@@ -93,7 +93,7 @@
 
             <div class="sub-container">
                 <div class="image-show">
-                    <img src="src/images/articles/samsung-77808960.png" alt="">
+                    <img src="src/images/articles/samsung s20-1126396635.png" alt="">
                 </div>
                 <div class="explore">
                     <div class="part">
