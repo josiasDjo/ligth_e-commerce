@@ -648,7 +648,7 @@
 
 
     .ft .icon-reseau i{
-        @apply m-5;
+        @apply m-5 text-5xl;
     }
     .ft .contact {
         @apply w-full justify-center items-center flex flex-wrap;
