@@ -1,8 +1,3 @@
-<?php 
-    require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'admincheck.php';
-    
-?>
-
 <div class="navbarUti">
     <ul>
         <li><a href="../../index.php">Home</a></li>
