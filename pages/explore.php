@@ -15,7 +15,7 @@
 
         <div class="container">
             <?php
-                require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'phone.php';
+                require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'ligth_e-commerce' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'phone.php';
                 // require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'watch.php';
                 // require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'airpod.php';
                 // require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'laptop.php';
