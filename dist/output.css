@@ -1279,7 +1279,6 @@ video {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  animation: fadeIn 0.5s forwards;
 }
 
 .container-explore .container #tab1 {
@@ -2112,4 +2111,4 @@ video {
     opacity: 0.9;
     background-color: #051620;
   }
-}
+}                                                    
