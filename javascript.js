@@ -55,7 +55,6 @@ gsap.to(element, {
 /* CONTENU EXPLORE SWITCH*/
 
 function showTab(tabId) {
-    alert("Fonction actiée");
     var tabs = document.getElementsByClassName('panelCont');
     for (var i = 0; i < tabs.length; i++) {
         tabs[i].style.display = 'none';

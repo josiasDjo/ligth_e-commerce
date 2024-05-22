@@ -1272,7 +1272,7 @@ video {
   display: none;
 }
 
-.container-explore .container .panelCont.active {
+.container-explore .container #tab1 {
   margin: auto;
   display: flex;
   width: 91.666667%;
