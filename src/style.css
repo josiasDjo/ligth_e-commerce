@@ -331,28 +331,34 @@
 .container-explore .container {
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
-.container-explore .container .sub-container {
+.container-explore .container .panelCont {
+    @apply hidden;
+}
+.container-explore .container .panelCont.active {
+    @apply block;
+}
+.container-explore .container .panelCont .sub-container {
     @apply w-80 p-3 h-72 mb-16 rounded-xl text-white mr-6 ml-6;
     background-color: #051620;
 }
-.container-explore .container .sub-container .image-show {
+.container-explore .container .panelCont .sub-container .image-show {
     @apply w-full h-5/6 justify-center items-center flex opacity-90 p-5 bg-slate-200;
 }
-.container-explore .container .sub-container .image-show img {
+.container-explore .container .panelCont .sub-container .image-show img {
     @apply max-w-full max-h-full;
 }
-.container-explore .container .sub-container .explore {
+.container-explore .container .panelCont .sub-container .explore {
     @apply w-full flex flex-row pt-2;
 }
-.container-explore .container .sub-container .explore .part {
+.container-explore .container .panelCont .sub-container .explore .part {
     @apply w-2/4 relative;
 }
-.container-explore .container .sub-container .explore .part button {
+.container-explore .container .panelCont .sub-container .explore .part button {
     @apply border-2 border-solid right-0 absolute p-1 pl-4 pr-4 rounded-lg;
     border-color: #E4800B;
     background-color: #E4800B;
 }
-.container-explore .container .erreur {
+.container-explore .container .panelCont .erreur {
     @apply text-red-400 font-semibold;
 }
 
