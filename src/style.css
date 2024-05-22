@@ -332,13 +332,13 @@
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
 .container-explore .container .panelCont {
-    @apply hidden;
+    @apply hidden w-11/12 flex-wrap justify-center items-center m-auto;
 }
 .container-explore .container .panelCont.active {
     @apply block;
 }
 .container-explore .container:first-child {
-    @apply block;
+    @apply flex flex-wrap justify-center items-center m-auto w-11/12 bg-red-400;
 }
 .container-explore .container .panelCont .sub-container {
     @apply w-80 p-3 h-72 mb-16 rounded-xl text-white mr-6 ml-6;
