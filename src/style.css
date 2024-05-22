@@ -332,7 +332,8 @@
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
 .container-explore .container .panelCont {
-    @apply hidden w-full justify-center items-center m-auto flex-wrap animate-bounce;
+    @apply hidden w-full justify-center items-center m-auto flex-wrap;
+    animation: fadeIn 0.5s forwards;
 }
 .container-explore .container #tab1 {
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
