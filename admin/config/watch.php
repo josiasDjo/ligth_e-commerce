@@ -1,7 +1,7 @@
 <?php require_once dirname(dirname(__DIR__)) .  DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR  . 'config' . DIRECTORY_SEPARATOR . 'condb.php'; ?>
 
 <?php
-    $req = "watch";
+    $req = "appleWatch";
     $sql = $bdd -> prepare("SELECT * FROM tproduit WHERE nomCollection =?");
     $sql -> execute(array($req));
 
