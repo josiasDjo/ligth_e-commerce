@@ -1288,8 +1288,6 @@ video {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .container-explore .container .panelCont .sub-container {
