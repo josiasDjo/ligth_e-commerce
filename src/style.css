@@ -332,12 +332,12 @@
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
 .container-explore .container .panelCont {
-    @apply hidden;
+    @apply hidden w-full justify-center items-center m-auto flex-wrap;
 }
 .container-explore .container #tab1 {
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
-.container-explore .container:first-child {
+.container-explore .container .panelCont.active{
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
 .container-explore .container .panelCont .sub-container {

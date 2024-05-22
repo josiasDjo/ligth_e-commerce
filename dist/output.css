@@ -592,6 +592,10 @@ video {
   display: block;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 /* navbar disgn */
 
 .navbarUti .btn-navbar {
@@ -1269,7 +1273,12 @@ video {
 }
 
 .container-explore .container .panelCont {
+  margin: auto;
   display: none;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-explore .container #tab1 {
@@ -1281,7 +1290,7 @@ video {
   justify-content: center;
 }
 
-.container-explore .container:first-child {
+.container-explore .container .panelCont.active {
   margin: auto;
   display: flex;
   width: 91.666667%;

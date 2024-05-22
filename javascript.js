@@ -59,6 +59,6 @@ function showTab(tabId) {
     for (var i = 0; i < tabs.length; i++) {
         tabs[i].style.display = 'none';
     }
-    document.getElementById(tabId).style.display = 'block';
+    document.getElementById(tabId).style.display = 'flex-wrap';
 }
 
