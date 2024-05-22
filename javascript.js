@@ -61,14 +61,15 @@ function showTab(tabId) {
     }
     document.getElementById(tabId).style.display = 'flex';
 
+    var selectedTab = document.getElementById(tabId)
     selectedTab.classList.add('active');
 
     // Animer les composants successivement
-    var components = selectedTab.getElementsByClassName('component');
+    var components = selectedTab.getElementsByClassName('sub-container');
     for (let i = 0; i < components.length; i++) {
         setTimeout(function() {
         components[i].style.opacity = 1;
-        }, i * 500); // Décalage de 500 ms entre chaque composant
+        }, i * 3000); // Décalage de 500 ms entre chaque composant
     }
 }
 

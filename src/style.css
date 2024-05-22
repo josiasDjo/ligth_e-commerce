@@ -318,6 +318,11 @@
     @apply mr-10 font-sans font-bold ml-10;
 }
 
+.navExplore ul li:hover {
+    @apply border-2 border-solid border-red-500;
+}
+
+
 
 /* explore disign */
 
