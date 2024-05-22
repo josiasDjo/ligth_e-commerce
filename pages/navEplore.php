@@ -1,8 +1,8 @@
 <div class="navExplore">
     <ul>
-        <li>WATCH</li>
-        <li>PHONE</li>
-        <li>AIRPOD</li>
-        <li>LAPTOP</li>
+        <li><button>WATCH</button></li>
+        <li><button>PHONE</button></li>
+        <li><button>AIRPOD</button></li>
+        <li><button>LAPTOP</button></li>
     </ul>
 </div>
