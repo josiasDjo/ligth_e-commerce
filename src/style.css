@@ -337,9 +337,9 @@
 .container-explore .container #tab1 {
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
-/* .container-explore .container .panelCont.active{
+.container-explore .container .panelCont.active{
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
-} */
+}
 .container-explore .container .panelCont .sub-container {
     @apply w-80 p-3 h-72 mb-16 rounded-xl text-white mr-6 ml-6;
     background-color: #051620;

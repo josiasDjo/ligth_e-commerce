@@ -1290,9 +1290,14 @@ video {
   justify-content: center;
 }
 
-/* .container-explore .container .panelCont.active{
-    @apply flex flex-wrap justify-center items-center m-auto w-11/12;
-} */
+.container-explore .container .panelCont.active {
+  margin: auto;
+  display: flex;
+  width: 91.666667%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 .container-explore .container .panelCont .sub-container {
   margin-bottom: 4rem;
@@ -2111,4 +2116,4 @@ video {
     opacity: 0.9;
     background-color: #051620;
   }
-}                                                    
+}
