@@ -479,17 +479,17 @@
     /* explore disign */
 
 
-    .container-explore .container .sub-container {
+    .container-explore .container .panelCont .sub-container {
         @apply w-72 p-3 h-64 mb-14 rounded-xl text-white mr-3 ml-3;
         background-color: #051620;
     }
-    .container-explore .container .sub-container .explore .part {
+    .container-explore .container .panelCont .sub-container .explore .part {
         @apply w-2/4 relative h-4;
     }
-    .container-explore .container .sub-container .explore .part label {
+    .container-explore .container .panelCont .sub-container .explore .part label {
         @apply text-sm;
     }
-    .container-explore .container .sub-container .explore .part p {
+    .container-explore .container .panelCont .sub-container .explore .part p {
         @apply text-sm;
     }
 
