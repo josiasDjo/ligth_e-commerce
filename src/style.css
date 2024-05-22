@@ -332,7 +332,7 @@
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
 .container-explore .container .panelCont {
-    @apply hidden w-full justify-center items-center m-auto flex-wrap;
+    @apply hidden w-full justify-center items-center m-auto flex-wrap animate-bounce;
 }
 .container-explore .container #tab1 {
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
@@ -365,6 +365,11 @@
     @apply text-red-400 font-semibold;
 }
 
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
 
 /* footer disign */
 
