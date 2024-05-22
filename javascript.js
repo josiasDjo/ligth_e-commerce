@@ -51,3 +51,14 @@ gsap.to(element, {
     scrollTop: 500, 
     ease: 'power2.out'
 });
+
+/* CONTENU EXPLORE SWITCH*/
+
+function showTab(tabId) {
+    var tabs = document.getElementsByClassName('tab-pane');
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = 'none';
+    }
+    document.getElementById(tabId).style.display = 'block';
+}
+
