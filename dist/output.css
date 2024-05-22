@@ -1269,16 +1269,16 @@ video {
 }
 
 .container-explore .container .panelCont {
-  margin: auto;
   display: none;
+}
+
+.container-explore .container .panelCont.active {
+  margin: auto;
+  display: flex;
   width: 91.666667%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.container-explore .container .panelCont.active {
-  display: block;
 }
 
 .container-explore .container:first-child {
