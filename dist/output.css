@@ -1245,7 +1245,7 @@ video {
   font-weight: 700;
 }
 
-.navExplore ul li:hover {
+.navExplore ul li:selected {
   border-width: 2px;
   border-style: solid;
   --tw-border-opacity: 1;
