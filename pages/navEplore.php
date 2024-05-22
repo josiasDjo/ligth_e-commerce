@@ -6,3 +6,4 @@
         <li><button onclick="showTab('tab4')">LAPTOP</button></li>
     </ul>
 </div>
+<script src="javascript.js"></script>
