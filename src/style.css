@@ -338,7 +338,7 @@
     @apply flex flex-wrap justify-center items-center m-auto w-11/12;
 }
 .container-explore .container:first-child {
-    @apply flex flex-wrap justify-center items-center m-auto w-11/12 bg-red-400;
+    @apply flex flex-wrap justify-center items-center m-auto w-11/1;
 }
 .container-explore .container .panelCont .sub-container {
     @apply w-80 p-3 h-72 mb-16 rounded-xl text-white mr-6 ml-6;
