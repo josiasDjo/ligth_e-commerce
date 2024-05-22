@@ -478,7 +478,12 @@
 
     /* explore disign */
 
-
+    .container-explore .container .panelCont {
+        @apply hidden;
+    }
+    .container-explore .container .panelCont.active {
+        @apply block;
+    }
     .container-explore .container .panelCont .sub-container {
         @apply w-72 p-3 h-64 mb-14 rounded-xl text-white mr-3 ml-3;
         background-color: #051620;
