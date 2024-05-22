@@ -337,6 +337,9 @@
 .container-explore .container .panelCont.active {
     @apply block;
 }
+.container-explore .container:first-child {
+    @apply block;
+}
 .container-explore .container .panelCont .sub-container {
     @apply w-80 p-3 h-72 mb-16 rounded-xl text-white mr-6 ml-6;
     background-color: #051620;
