@@ -15,7 +15,13 @@
 
     <div class="conn_container">
         <div class="sub-photo">
-
+            <div id="scrolling-container">
+                <ul id="scrolling-content">
+                    <?php    
+                        require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'showdataHome.php';          
+                    ?>
+                </ul>
+            </div> 
         </div>
 
         <div class="sub-conn">
