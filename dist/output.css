@@ -1245,7 +1245,8 @@ video {
   font-weight: 700;
 }
 
-.navExplore ul li:selected {
+.navExplore ul:first-child {
+  position: relative;
   border-width: 2px;
   border-style: solid;
   --tw-border-opacity: 1;
