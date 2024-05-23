@@ -315,11 +315,11 @@
     @apply flex flex-row;
 }
 .navExplore ul li {
-    @apply mr-10 font-sans font-bold ml-10;
+    @apply mr-10 font-sans font-bold ml-10 shadow-sm;
 }
 
-.navExplore ul:first-child {
-    @apply border-2 border-solid border-red-500 relative;
+.navExplore ul li button {
+    /* @apply border-2 border-solid border-red-500; */
 }
 
 
