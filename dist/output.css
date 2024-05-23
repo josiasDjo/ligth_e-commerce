@@ -668,7 +668,7 @@ video {
   height: 400px;
 }
 
-.accueil #scrolling-container {
+#scrolling-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -676,7 +676,7 @@ video {
   width: 500px;
 }
 
-.accueil #scrolling-container #scrolling-content {
+#scrolling-container #scrolling-content {
   margin: auto;
   display: flex;
   height: 100%;
@@ -687,8 +687,7 @@ video {
   padding: 1.25rem;
 }
 
-.accueil #scrolling-container #scrolling-content li {
-  display: flex;
+#scrolling-container #scrolling-content li {
   display: none;
   height: 100%;
   width: 100%;
@@ -696,13 +695,13 @@ video {
   justify-content: center;
 }
 
-.accueil #scrolling-container #scrolling-content li img {
+#scrolling-container #scrolling-content li img {
   max-height: 100%;
   max-width: 100%;
 }
 
-.accueil #scrolling-container #scrolling-content li:first-child {
-  display: block;
+#scrolling-container #scrolling-content li:first-child {
+  display: flex;
 }
 
 .container_accueil {
