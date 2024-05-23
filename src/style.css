@@ -318,8 +318,8 @@
     @apply mr-10 font-sans font-bold ml-10;
 }
 
-.navExplore ul li:selected {
-    @apply border-2 border-solid border-red-500;
+.navExplore ul li button:active {
+    @apply border-2 border-solid border-red-500 relative;
 }
 
 

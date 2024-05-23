@@ -60,6 +60,7 @@ function showTab(tabId) {
         tabs[i].style.display = 'none';
     }
     document.getElementById(tabId).style.display = 'flex';
+    document.getElementsByClassName('btnSelect').style.border = '1px solid red';
 
     var selectedTab = document.getElementById(tabId)
     selectedTab.classList.add('active');
