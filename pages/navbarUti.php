@@ -13,7 +13,7 @@
         <button onclick="navbarClose(); " class="close-nav">
             <i class="fa-solid fa-xmark"></i>
         </button>
-        <li><a href="../../index.php">Home</a></li>
+        <li><a href="../../../index.php">Home</a></li>
         <li><a href="../../pages/explore.php">Explore</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>

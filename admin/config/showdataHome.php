@@ -3,46 +3,26 @@
 ?>
 
 <?php
-    // $dossier_items = "../../src/images/articles/";
-    // $fichier_items = glob($dossier_items . '*.png');
+$sql = $bdd->prepare("SELECT * FROM tproduit");
+$sql->execute();
+$all = $sql->rowCount();
+$resultat = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-    // global $show_items;
+$compteur = 6;
+if ($all != 0) {
+    foreach ($resultat as $res) {
+        // while ($compteur < 6) {
+        $image_items_name = $res['image'];
+        echo "  
+            <li>
+                <img src=\"../../src/images/articles/$image_items_name\" alt=\"\">
+            </li>
+        ";
 
-    // if ($fichier_items !== false && count($fichier_items) > 0) {
-    //     $show_items = $fichier_items[array_rand($fichier_items)];
-    // } else {
-    //     $error = "Aucun fichier trouvé !! ";
-    // }  
-    
-
-
-    $sql = $bdd -> prepare("SELECT * FROM tproduit");
-    $sql -> execute();
-    $total = $sql -> rowCount();
-    $resultat_show = $sql -> fetchAll(PDO::FETCH_ASSOC); 
-
-    if ($total != 0) {
-        foreach($resultat_show as $res) {
-            $nom_P = $res['nom'];
-            $prix_P = $res['prix'];
-            $descriP = $res['description'];
-            $image_P = $res['image'];
-            echo "  <div class=\"sub-container\">
-                <div class=\"image-show\">
-                    <img src=\"../../src/images/articles/$image_P \" alt=\"\">
-                </div>
-                <div class=\"explore\">
-                    <div class=\"part\">
-                        <label>$prix_P</label>
-                        <p>$descriP</p>
-                    </div>
-                    <div class=\"part\">
-                        <a href=\"#\"><button>Explore</button></a>
-                    </div>
-                </div>
-            </div>";
-        }
-    } else {
-        $error = "Table vide !! ";
+        $compteur++;
+        // }
     }
+} else {
+    echo "Aucun élément trouvé ! ";
+}
 ?>

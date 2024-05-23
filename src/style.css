@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+* {
+    list-style: none;
+}
 /* navbar disgn */
 
 .navbarUti .btn-navbar {

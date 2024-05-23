@@ -12,7 +12,9 @@
 
     <div class="conn_container">
         <div class="sub-photo">
-
+            <?php    
+                require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'showdataHome.php';          
+            ?>
         </div>
 
         <div class="sub-conn">
@@ -32,5 +34,7 @@
             </div>
         </div>
     </div>
+
+    <script src="../../javascript.js"></script>
 </body>
 </html>
