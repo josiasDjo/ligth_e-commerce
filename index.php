@@ -1,4 +1,12 @@
-<?php require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'ligth_e-commerce' . DIRECTORY_SEPARATOR . 'head.php' ; ?>
+<?php 
+    require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'e-commerce' . DIRECTORY_SEPARATOR . 'ligth_e-commerce' . DIRECTORY_SEPARATOR . 'head.php' ; 
+
+
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
+?>
 <body>
     <?php  
         require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'ligth_e-commerce' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'navbarUti.php';
@@ -77,8 +85,9 @@
         </div>
     </div>
 
-    <script src="javascript.js"></script>
     <?php require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'ligth_e-commerce' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'footer.php' ?>
+
+    <script src="javascript.js"></script>
 
 </body>
 </html>

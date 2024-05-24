@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoad');
+    const allElements = document.body.querySelectorAll('*');
+    console.log('allElements selected');
+    allElements.forEach((element, index) => {
+        console.log('element animate ' + element);
+        setTimeout(() => {
+            element.style.opacity = 1;
+            element.style.transform = 'translateY(0)';
+        }, index * 500); // 500ms delay between each element
+    });
+});
+
+
 // menu bar
 
 function navbarChange() {
@@ -44,13 +58,15 @@ scrollingContainer.addEventListener('mouseleave', function() {
 
 
 // animation scolling
-var element = document.getElementsByClassName('container_accueil');
+// var element = document.getElementsByClassName('container_accueil');
 
-gsap.to(element, { 
-    duration: 1, 
-    scrollTop: 500, 
-    ease: 'power2.out'
-});
+// gsap.to(element, { 
+//     duration: 1, 
+//     scrollTop: 500, 
+//     ease: 'power2.out'
+// });
+
+
 
 /* CONTENU EXPLORE SWITCH*/
 

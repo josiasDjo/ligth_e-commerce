@@ -5,6 +5,9 @@
 
 * {
     list-style: none;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(20px);
 }
 /* navbar disgn */
 
