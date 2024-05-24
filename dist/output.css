@@ -612,9 +612,14 @@ p,
 label,
 img,
 li,
-a {
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
   opacity: 0;
-  transition: opacity 1s ease-out , transform 1s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
   transform: translateY(40px);
 }
 
