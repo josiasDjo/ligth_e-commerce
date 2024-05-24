@@ -10,7 +10,8 @@ p,
 label,
 img,
 li,
-a,
+button,
+input,
 h1,
 h2,
 h3,
@@ -29,11 +30,11 @@ h5 {
     @apply hidden;
 }
 .navbarUti {
-    @apply w-full h-20 text-white justify-center items-center flex;
+    @apply w-full h-20 text-white justify-center items-center flex relative;
     background-color: #051620;
 }
 .navbarUti ul {
-    @apply flex flex-row;
+    @apply flex flex-row relative;
 }
 .navbarUti ul .close-nav {
     @apply hidden;
@@ -41,8 +42,8 @@ h5 {
 .navbarUti ul li {
     @apply mr-8 font-semibold text-lg;
 }
-.navbarUti ul li button {
-    @apply rounded-lg p-1 pr-4 pl-4 absolute right-5;
+.navbarUti ul button {
+    @apply rounded-lg p-1 pr-4 pl-4 relative;
     background-color: #E4800B;
 }
 

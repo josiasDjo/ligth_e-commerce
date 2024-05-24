@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     const allElements = document.body.querySelectorAll('*');
 
     function isElementVisible(element) {
         const rect = element.getBoundingClientRect();
+        alert("Coordonnées récupérées !! ");
+        console.log('Element rect:', rect);
+        console.log('Window innerHeight:', window.innerHeight);
+        console.log('Window innerWidth:', window.innerWidth);
+
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -12,17 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     function animateVisibleElements() {
         allElements.forEach((element, index) => {
-            console.log('element animate ' + element);
             setTimeout(() => {
                 element.style.opacity = 1;
                 element.style.transform = 'translateY(0)';
-            }, index * 40); // 500ms delay between each element
+            }, index * 10); // 500ms delay between each element
         });
+
+        isElementVisible();
+
     }
 
     animateVisibleElements();
 
-    window.addEventListener('scroll', animateVisibleElements);
 });
 
 

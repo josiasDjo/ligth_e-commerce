@@ -612,7 +612,8 @@ p,
 label,
 img,
 li,
-a,
+button,
+input,
 h1,
 h2,
 h3,
@@ -637,6 +638,7 @@ h5 {
 }
 
 .navbarUti {
+  position: relative;
   display: flex;
   height: 5rem;
   width: 100%;
@@ -648,6 +650,7 @@ h5 {
 }
 
 .navbarUti ul {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -663,9 +666,8 @@ h5 {
   font-weight: 600;
 }
 
-.navbarUti ul li button {
-  position: absolute;
-  right: 1.25rem;
+.navbarUti ul button {
+  position: relative;
   border-radius: 0.5rem;
   padding: 0.25rem;
   padding-right: 1rem;
