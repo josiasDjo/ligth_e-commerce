@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     element.style.opacity = 1;
                     element.style.transform = 'translateY(0)';
                 }, index * 3); // 500ms delay between each element
-                // isElementVisible(element)
             }
         });
 
@@ -60,23 +59,23 @@ function navbarClose() {
 }
 
 // défilements des artices à la page d'accueil
-var scrollingContainer = document.getElementById('scrolling-container');
-var scrollingContent = document.getElementById('scrolling-content');
+// var scrollingContainer = document.getElementById('scrolling-container');
+// var scrollingContent = document.getElementById('scrolling-content');
 
-function scroll() {
-    scrollingContent.appendChild(scrollingContent.firstElementChild);
-}
+// function scroll() {
+//     scrollingContent.appendChild(scrollingContent.firstElementChild);
+// }
 
 
-var scrollInterval = setInterval(scroll, 3000);
+// var scrollInterval = setInterval(scroll, 3000);
 
-scrollingContainer.addEventListener('mouseenter', function() {
-    clearInterval(scrollInterval);
-});
+// scrollingContainer.addEventListener('mouseenter', function() {
+//     clearInterval(scrollInterval);
+// });
 
-scrollingContainer.addEventListener('mouseleave', function() {
-    scrollInterval = setInterval(scroll, 3000);
-});
+// scrollingContainer.addEventListener('mouseleave', function() {
+//     scrollInterval = setInterval(scroll, 3000);
+// });
 
 
 
@@ -105,11 +104,36 @@ function showTab(tabId) {
     selectedTab.classList.add('active');
 
     // Animer les composants successivement
-    var components = selectedTab.getElementsByClassName('sub-container');
-    for (let i = 0; i < components.length; i++) {
-        setTimeout(function() {
-        components[i].style.opacity = 1;
-        }, i * 3000); // Décalage de 500 ms entre chaque composant
+    const allElements = document.body.querySelectorAll('*');
+
+    function animateVisibleElements() {
+        allElements.forEach((element, index) => {
+            if (isElementVisible(element)) {
+                setTimeout(() => {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }, index * 3); // 500ms delay between each element
+            }
+        });
+
+
+        function isElementVisible(element) {
+            const rect = element.getBoundingClientRect();
+            console.log('Element rect:', rect);
+            console.log('Window innerHeight:', window.innerHeight);
+            console.log('Window innerWidth:', window.innerWidth);
+    
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
     }
+
+    animateVisibleElements();
+    window.addEventListener('scroll', animateVisibleElements);
 }
 
