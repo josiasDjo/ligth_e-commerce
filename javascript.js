@@ -10,14 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
+    function animateVisibleElements() {
+        allElements.forEach((element, index) => {
+            console.log('element animate ' + element);
+            setTimeout(() => {
+                element.style.opacity = 1;
+                element.style.transform = 'translateY(0)';
+            }, index * 40); // 500ms delay between each element
+        });
+    }
 
-    allElements.forEach((element, index) => {
-        console.log('element animate ' + element);
-        setTimeout(() => {
-            element.style.opacity = 1;
-            element.style.transform = 'translateY(0)';
-        }, index * 40); // 500ms delay between each element
-    });
+    animateVisibleElements();
+
+    window.addEventListener('scroll', animateVisibleElements);
 });
 
 
