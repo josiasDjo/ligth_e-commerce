@@ -18,15 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
     function animateVisibleElements() {
         allElements.forEach((element, index) => {
-            setTimeout(() => {
-                element.style.opacity = 1;
-                element.style.transform = 'translateY(0)';
-            }, index * 10); // 500ms delay between each element
+            if (isElementVisible(element)) {
+                setTimeout(() => {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }, index * 10); // 500ms delay between each element
+                // isElementVisible(element)
+            }
         });
 
-        var animateElement = function isElementVisible(element) {
+
+        function isElementVisible(element) {
             const rect = element.getBoundingClientRect();
-            alert("Coordonnées récupérées !! ");
             console.log('Element rect:', rect);
             console.log('Window innerHeight:', window.innerHeight);
             console.log('Window innerWidth:', window.innerWidth);
