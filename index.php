@@ -87,7 +87,6 @@
 
     <?php require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'ligth_e-commerce' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'footer.php' ?>
 
-    <script src="javascript.js"></script>
 
 </body>
 </html>

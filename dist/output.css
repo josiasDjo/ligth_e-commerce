@@ -606,9 +606,16 @@ video {
 
 * {
   list-style: none;
+}
+
+p,
+label,
+img,
+li,
+a {
   opacity: 0;
-  transition: opacity 1s ease-out, transform 1s ease-out;
-  transform: translateY(20px);
+  transition: 1s ease-out;
+  transform: translateY(40px);
 }
 
 /* navbar disgn */

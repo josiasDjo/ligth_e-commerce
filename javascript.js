@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             element.style.opacity = 1;
             element.style.transform = 'translateY(0)';
-        }, index * 500); // 500ms delay between each element
+        }, index * 40); // 500ms delay between each element
     });
 });
 
