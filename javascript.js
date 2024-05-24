@@ -2,20 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const allElements = document.body.querySelectorAll('*');
 
-    function isElementVisible(element) {
-        const rect = element.getBoundingClientRect();
-        alert("Coordonnées récupérées !! ");
-        console.log('Element rect:', rect);
-        console.log('Window innerHeight:', window.innerHeight);
-        console.log('Window innerWidth:', window.innerWidth);
+    // function isElementVisible(element) {
+    //     const rect = element.getBoundingClientRect();
+    //     alert("Coordonnées récupérées !! ");
+    //     console.log('Element rect:', rect);
+    //     console.log('Window innerHeight:', window.innerHeight);
+    //     console.log('Window innerWidth:', window.innerWidth);
 
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
+    //     return (
+    //         rect.top >= 0 &&
+    //         rect.left >= 0 &&
+    //         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    //         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    //     );
+    // }
     function animateVisibleElements() {
         allElements.forEach((element, index) => {
             setTimeout(() => {
@@ -24,7 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }, index * 10); // 500ms delay between each element
         });
 
-        isElementVisible();
+        var animateElement = function isElementVisible(element) {
+            const rect = element.getBoundingClientRect();
+            alert("Coordonnées récupérées !! ");
+            console.log('Element rect:', rect);
+            console.log('Window innerHeight:', window.innerHeight);
+            console.log('Window innerWidth:', window.innerWidth);
+    
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
 
     }
 
