@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoad');
     const allElements = document.body.querySelectorAll('*');
-    console.log('allElements selected');
+
+    function isElementVisible(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
     allElements.forEach((element, index) => {
         console.log('element animate ' + element);
         setTimeout(() => {
