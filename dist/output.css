@@ -625,8 +625,8 @@ h5 {
 
 p, i {
   opacity: 0;
-  transition: opacity 500ms ease-out, transform 500ms ease-out;
-  transform: translateY(-40px);
+  transition: opacity 800ms ease-out, transform 800ms ease-out;
+  transform: translateY(-60px);
 }
 
 /* navbar disgn */
@@ -1446,6 +1446,8 @@ p, i {
 
 .ft .icon-reseau i {
   margin: 1.25rem;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .ft .contact {
@@ -1995,8 +1997,6 @@ p, i {
 
   .ft .icon-reseau i {
     margin: 1.25rem;
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .ft .contact {
