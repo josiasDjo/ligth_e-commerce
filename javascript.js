@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     animateVisibleElements();
-    document.addEventListener('scroll', animateVisibleElements);
+    window.addEventListener('scroll', animateVisibleElements);
     //window.addEventListener('scrollend', animateVisibleElements)
 });
 
