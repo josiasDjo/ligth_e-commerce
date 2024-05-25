@@ -6,7 +6,6 @@
 * {
     list-style: none;
 }
-p,
 label,
 img,
 li,
@@ -20,6 +19,11 @@ h5 {
     opacity: 0;
     transition: opacity 500ms ease-out, transform 500ms ease-out;
     transform: translateY(40px);
+}
+p {
+    opacity: 0;
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+    transform: translateY(-40px);
 }
 /* navbar disgn */
 
