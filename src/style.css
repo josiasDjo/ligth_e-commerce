@@ -20,7 +20,7 @@ h5 {
     transition: opacity 500ms ease-out, transform 500ms ease-out;
     transform: translateY(40px);
 }
-p {
+p, i {
     opacity: 0;
     transition: opacity 500ms ease-out, transform 500ms ease-out;
     transform: translateY(-40px);
