@@ -619,14 +619,16 @@ h3,
 h4,
 h5 {
   opacity: 0;
-  transition: opacity 500ms ease-out, transform 500ms ease-out;
+  transition: opacity 100ms ease-out, transform 100ms ease-out;
   transform: translateY(40px);
 }
 
-p, i {
+p,
+i,
+.sub-container {
   opacity: 0;
-  transition: opacity 800ms ease-out, transform 800ms ease-out;
-  transform: translateY(-60px);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+  transform: translateY(-100px);
 }
 
 /* navbar disgn */
@@ -1446,8 +1448,8 @@ p, i {
 
 .ft .icon-reseau i {
   margin: 1.25rem;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .ft .contact {

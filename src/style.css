@@ -17,13 +17,15 @@ h3,
 h4,
 h5 {
     opacity: 0;
-    transition: opacity 500ms ease-out, transform 500ms ease-out;
+    transition: opacity 100ms ease-out, transform 100ms ease-out;
     transform: translateY(40px);
 }
-p, i {
+p,
+i,
+.sub-container {
     opacity: 0;
-    transition: opacity 800ms ease-out, transform 800ms ease-out;
-    transform: translateY(-60px);
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+    transform: translateY(-100px);
 }
 /* navbar disgn */
 
@@ -412,7 +414,7 @@ p, i {
     @apply m-2;
 }
 .ft .icon-reseau i{
-    @apply m-5 text-5xl;
+    @apply m-5 text-3xl;
 }
 .ft .contact {
     @apply w-full justify-center items-center flex;
