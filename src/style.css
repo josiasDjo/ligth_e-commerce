@@ -16,14 +16,14 @@ h3,
 h4,
 h5 {
     opacity: 0;
-    transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
     transform: translateY(100px);
 }
 p,
 i,
 .sub-container {
     opacity: 0;
-    transition: opacity 400ms ease-out, transform 400ms ease-out;
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
     transform: translateY(-100px);
 }
 /* navbar disgn */
