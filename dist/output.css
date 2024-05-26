@@ -611,7 +611,6 @@ video {
 label,
 img,
 li,
-button,
 input,
 h1,
 h2,
@@ -619,7 +618,7 @@ h3,
 h4,
 h5 {
   opacity: 0;
-  transition: opacity 400ms ease-out, transform 400ms ease-out;
+  transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
   transform: translateY(100px);
 }
 
@@ -628,7 +627,7 @@ i,
 .sub-container {
   opacity: 0;
   transition: opacity 400ms ease-out, transform 400ms ease-out;
-  transform: translateY(-80px);
+  transform: translateY(-100px);
 }
 
 /* navbar disgn */
@@ -735,7 +734,7 @@ i,
 .container_accueil {
   margin: auto;
   display: flex;
-  width: 83.333333%;
+  width: 91.666667%;
   flex-direction: column;
   align-items: center;
   justify-content: center;

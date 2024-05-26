@@ -16,7 +16,7 @@ h3,
 h4,
 h5 {
     opacity: 0;
-    transition: opacity 400ms ease-out, transform 400ms ease-out;
+    transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
     transform: translateY(100px);
 }
 p,
@@ -24,7 +24,7 @@ i,
 .sub-container {
     opacity: 0;
     transition: opacity 400ms ease-out, transform 400ms ease-out;
-    transform: translateY(-80px);
+    transform: translateY(-100px);
 }
 /* navbar disgn */
 
@@ -78,7 +78,7 @@ i,
     @apply flex;
 }
 .container_accueil {
-    @apply w-10/12 justify-center items-center flex m-auto flex-col;
+    @apply w-11/12 justify-center items-center flex m-auto flex-col;
 }
 .container_accueil h1 {
     @apply font-bold text-2xl m-12;
