@@ -1,3 +1,4 @@
+window.addEventListener('scroll', animateVisibleElements);
 document.addEventListener('DOMContentLoaded', () => {
 
     const allElements = document.body.querySelectorAll('*');
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    //annimation des contenus 
     animateVisibleElements();
     window.addEventListener('scroll', animateVisibleElements);
     //window.addEventListener('scrollend', animateVisibleElements)
