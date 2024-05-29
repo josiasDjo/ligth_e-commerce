@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //annimation des contenus 
+    //bug animation explorer 
     animateVisibleElements();
     window.addEventListener('scroll', animateVisibleElements);
     //window.addEventListener('scrollend', animateVisibleElements)
