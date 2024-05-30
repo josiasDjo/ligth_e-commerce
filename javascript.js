@@ -1,4 +1,4 @@
-window.addEventListener('scroll', animateVisibleElements);
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const allElements = document.body.querySelectorAll('*');
