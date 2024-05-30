@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Window innerWidth:', window.innerWidth);
 
         return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            rect.top <= window.innerHeight) && ((rect.top + rect.height) >=  0 &&
+            rect.left<= window.innerWidth) && ((rect.top + rect.height) >= 0 
+            // rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            // rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
 
