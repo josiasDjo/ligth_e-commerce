@@ -6,7 +6,7 @@
 * {
     list-style: none;
 }
-label,
+/* label,
 img,
 li,
 input,
@@ -26,7 +26,8 @@ i,
     opacity: 0;
     transition: opacity 500ms ease-out, transform 500ms ease-out;
     transform: translateY(-100px);
-}
+} */
+
 /* navbar disgn */
 .navbarUti .btn-navbar {
     @apply justify-center items-center flex pl-6;

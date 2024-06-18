@@ -36,7 +36,6 @@ require_once dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'ligth_e-commerce
     </div>
 
     <?php require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'footer.php' ?>
-    <!-- <script src="javascript.js" defer ></script> -->
 
 </body>
 </html>

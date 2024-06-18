@@ -608,7 +608,7 @@ video {
   list-style: none;
 }
 
-label,
+/* label,
 img,
 li,
 input,
@@ -617,19 +617,18 @@ h2,
 h3,
 h4,
 h5 {
-  opacity: 0;
-  transition: opacity 500ms ease-out, transform 500ms ease-out;
-  transform: translateY(100px);
+    opacity: 0;
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+    transform: translateY(100px);
 }
-
 p,
 i,
 .sub-container,
 .panelCont {
-  opacity: 0;
-  transition: opacity 500ms ease-out, transform 500ms ease-out;
-  transform: translateY(-100px);
-}
+    opacity: 0;
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+    transform: translateY(-100px);
+} */
 
 /* navbar disgn */
 

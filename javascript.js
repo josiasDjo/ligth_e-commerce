@@ -17,21 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    function animateVisibleElements() {
-        allElements.forEach((element, index) => {
-            if (isElementVisible(element)) {
-                setTimeout(() => {
-                    element.style.opacity = 1;
-                    element.style.transform = 'translateY(0)';
-                }, index * 10); 
-            }
-        });
-    }
+    // function animateVisibleElements() {
+    //     allElements.forEach((element, index) => {
+    //         if (isElementVisible(element)) {
+    //             setTimeout(() => {
+    //                 element.style.opacity = 1;
+    //                 element.style.transform = 'translateY(0)';
+    //             }, index * 10); 
+    //         }
+    //     });
+    // }
 
     //annimation des contenus 
     //bug animation explorer 
-    animateVisibleElements();
-    window.addEventListener('scroll', animateVisibleElements);
+    // animateVisibleElements();
+    // window.addEventListener('scroll', animateVisibleElements);
     //window.addEventListener('scrollend', animateVisibleElements)
 });
 
